@@ -1,0 +1,2507 @@
+
+   
+    {
+      "intents": [
+        {
+          "tag": "greeting",
+          "patterns": [
+            "Hello, Iris",
+            "Good morning, Iris",
+            "Greetings, iris",
+            "Hi there, iris"
+          ],
+          "responses": [
+            "Good morning, sir. How may I assist you today?",
+            "Greetings. What can I help you with,",
+            "Hello! I'm at your service, boss.",
+            "Hi there,  How can I support your endeavors today?"
+          ]
+        },
+
+        {
+          "tag": "medication_interaction",
+          "patterns": [
+            "Can this medicine be taken with that?",
+            "Is there an interaction between these drugs?",
+            "Are these medications safe to use together?",
+            "What should I know about mixing these medications?"
+          ],
+          "responses": [
+            "Please provide the names of the medications, and I'll check for any interactions.",
+            "I can help with that. What drugs are we looking at specifically?",
+            "It's important to check for interactions. Let's review the medications in question.",
+            "I'll need the exact names of the medicines to provide accurate information on interactions."
+          ]
+        },
+        {
+          "tag": "lifestyle_advice",
+          "patterns": [
+            "What diet is best for high blood pressure?",
+            "Are there exercises that can help with joint pain?",
+            "How can sleep affect my health?",
+            "What's a good stress relief technique?"
+          ],
+          "responses": [
+            "A diet low in sodium is recommended for high blood pressure. Would you like more detailed advice?",
+            "Low-impact exercises can be beneficial for joint pain. Shall I suggest a routine?",
+            "Sleep is crucial for overall health. Are you experiencing any issues with sleep?",
+            "There are several stress relief techniques, such as deep breathing, yoga, and meditation. Interested in learning more?"
+          ]
+        },
+
+        {
+          "tag": "health_monitoring",
+          "patterns": [
+            "How do I monitor my blood pressure at home?",
+            "What's the best way to track my blood sugar levels?",
+            "Can you suggest a method for monitoring my heart rate?",
+            "What tools do you recommend for health tracking?"
+          ],
+          "responses": [
+            "Monitoring blood pressure at home can be done with a digital blood pressure cuff. Would you like a tutorial on its use?",
+            "To track blood sugar levels effectively, consider using a glucometer at set times each day. Shall I set a reminder for you?",
+            "Monitoring heart rate can be done manually or with wearable technology. Which method do you prefer?",
+            "There are several apps and devices for health tracking. Let's find one that suits your specific needs."
+          ]
+        },
+        {
+          "tag": "vaccination_info",
+          "patterns": [
+            "Do I need a flu shot?",
+            "What vaccines are recommended for traveling to Africa?",
+            "At what age should children be vaccinated for measles?",
+            "Can you provide the latest vaccination schedule?"
+          ],
+          "responses": [
+            "Flu shots are recommended annually for most people. Have you had one recently?",
+            "For travel to Africa, vaccines for yellow fever, hepatitis A, and typhoid are often recommended. Do you have a travel date in mind?",
+            "Children typically receive the measles vaccine between 12-15 months of age, with a second dose at 4-6 years old.",
+            "I can provide the latest vaccination schedule. Would you like information for adults, children, or both?"
+          ]
+        },
+        {
+          "tag": "symptom_severity",
+          "patterns": [
+            "How serious is a fever of 103°F?",
+            "Should I be worried about chest pain that comes and goes?",
+            "When should I seek help for a headache?",
+            "Are occasional heart palpitations a concern?"
+          ],
+          "responses": [
+            "A fever of 103°F is considered high and warrants medical attention, especially if persistent or with other symptoms.",
+            "Intermittent chest pain should not be ignored, especially if it's new or severe. It's best to consult a healthcare provider.",
+            "Headaches that are severe, frequent, sudden, or accompanied by other symptoms should prompt a medical evaluation.",
+            "Occasional heart palpitations are common, but if they're frequent or accompanied by dizziness, it's important to get them checked out."
+          ]
+        },
+        {
+          "tag": "preventive_care",
+          "patterns": [
+            "How can I reduce my risk of heart disease?",
+            "What are the best practices for cancer prevention?",
+            "Can lifestyle changes help with preventing diabetes?",
+            "What screenings should I get to prevent health issues?"
+          ],
+          "responses": [
+            "Reducing heart disease risk can involve exercise, a healthy diet, and regular health screenings. Shall we create a plan?",
+            "Cancer prevention strategies include avoiding tobacco, limiting alcohol, protection from the sun, and regular screenings.",
+            "Yes, lifestyle changes such as diet, exercise, and maintaining a healthy weight can help prevent diabetes.",
+            "Preventive screenings depend on your age, gender, and risk factors. Let's review which ones are appropriate for you."
+          ]
+        },
+
+        {
+          "tag": "mental_health_support",
+          "patterns": [
+            "How can I manage stress better?",
+            "Are there techniques to cope with anxiety?",
+            "What can I do about my depression symptoms?",
+            "Can you help me find a mental health professional?"
+          ],
+          "responses": [
+            "Managing stress can be improved with relaxation techniques, exercise, and proper sleep. Would you like more detailed strategies?",
+            "Coping with anxiety can involve mindfulness, breathing exercises, and professional therapy. Shall we explore these options?",
+            "Dealing with depression symptoms is important; regular exercise, a healthy diet, therapy, and sometimes medication can help. Would you like a referral to a specialist?",
+            "I can assist you in finding a mental health professional. What is your location and preference for the specialist?"
+          ]
+        },
+        {
+          "tag": "nutrition_guidance",
+          "patterns": [
+            "What foods are good for heart health?",
+            "Can you suggest a diet plan for weight loss?",
+            "What should I eat if I have high cholesterol?",
+            "How much water should I be drinking daily?"
+          ],
+          "responses": [
+            "Foods good for heart health include fruits, vegetables, lean proteins, and whole grains. Would you like to set up a meal plan?",
+            "A diet plan for weight loss should include a balanced intake of nutrients while controlling calories. Shall we work on a plan tailored for you?",
+            "For high cholesterol, it's important to reduce saturated fats and increase fiber intake. Need help with specific meal suggestions?",
+            "The amount of water needed daily varies, but generally, 8 glasses (about 2 liters) is a good target. Would you like reminders to stay hydrated?"
+          ]
+        },
+        {
+          "tag": "sleep_disorders",
+          "patterns": [
+            "I'm having trouble sleeping, what can I do?",
+            "What are the signs of sleep apnea?",
+            "Can you tell me about insomnia treatments?",
+            "Why do I always feel tired even after a full night's sleep?"
+          ],
+          "responses": [
+            "Trouble sleeping can often be improved with good sleep hygiene. Let's go over your bedtime routine.",
+            "Signs of sleep apnea include loud snoring, episodes of stopped breathing, and excessive daytime fatigue. Should I look into a sleep study for you?",
+            "Insomnia treatments range from behavioral therapy to prescription medications. Would you like to discuss these further?",
+            "Feeling tired after a full night's sleep could indicate sleep quality issues. Factors like sleep apnea or restless legs syndrome may be the cause."
+          ]
+        },
+        {
+          "tag": "exercise_recommendations",
+          "patterns": [
+            "What type of exercise is best for beginners?",
+            "How can I increase my physical activity with a busy schedule?",
+            "What are some low-impact exercises I can do?",
+            "Can you recommend a workout for stress relief?"
+          ],
+          "responses": [
+            "For beginners, walking, swimming, and yoga are excellent options. Would you like to create a starter routine?",
+            "Increasing physical activity can be as simple as taking the stairs or short walk breaks. How about setting up a daily schedule?",
+            "Low-impact exercises include cycling, swimming, and elliptical machines. Interested in more detailed plans?",
+            "Workouts for stress relief can include yoga, tai chi, or even high-intensity interval training to help release endorphins. Shall we try one out?"
+          ]
+        },
+
+        {
+          "tag": "allergy_management",
+          "patterns": [
+            "How can I manage seasonal allergies?",
+            "What are the best ways to prevent allergy flare-ups?",
+            "Can you suggest treatments for food allergies?",
+            "What should I do if I have an allergic reaction?"
+          ],
+          "responses": [
+            "Seasonal allergies can be managed with antihistamines and by minimizing exposure to allergens. Would you like to know more?",
+            "Preventing allergy flare-ups can involve using air purifiers and avoiding known triggers. I can provide a list of common preventive measures.",
+            "Treatment for food allergies includes avoiding the allergen and possibly carrying an epinephrine injector. Shall we review your specific allergies?",
+            "For an allergic reaction, take an antihistamine and seek immediate medical help if it's severe. Do you have medication on hand?"
+          ]
+        },
+        {
+          "tag": "skin_care",
+          "patterns": [
+            "What's a good skincare routine?",
+            "How can I protect my skin from sun damage?",
+            "Can you recommend treatment for acne?",
+            "What are the signs of skin cancer?"
+          ],
+          "responses": [
+            "A good skincare routine includes cleansing, moisturizing, and applying sunscreen. Would you like personalized product recommendations?",
+            "Protecting your skin from sun damage involves using a broad-spectrum SPF 30 or higher sunscreen. I can send you tips on effective sun protection.",
+            "Treatment for acne varies depending on its severity, but options include topical treatments and oral medications. Do you want to explore these options?",
+            "Signs of skin cancer include new growths, changes in existing moles, and non-healing ulcers. Would you like to schedule a skin check?"
+          ]
+        },
+        {
+          "tag": "chronic_conditions",
+          "patterns": [
+            "How do I manage a chronic condition like arthritis?",
+            "What lifestyle changes are recommended for chronic heart disease?",
+            "Can you help me create a management plan for my diabetes?",
+            "What are the best practices for living with a chronic lung condition?"
+          ],
+          "responses": [
+            "Managing arthritis often involves a combination of medication, physical therapy, and lifestyle changes. Shall we discuss a comprehensive plan?",
+            "For chronic heart disease, recommended changes include diet, exercise, and possibly medication adjustments. Let's detail a plan that suits your needs.",
+            "Creating a diabetes management plan includes monitoring blood sugar, healthy eating, and regular exercise. Ready to start planning?",
+            "Best practices for chronic lung conditions include quitting smoking, pulmonary rehabilitation, and regular exercise. Would you like to learn more?"
+          ]
+        },
+        {
+          "tag": "child_health",
+          "patterns": [
+            "How can I improve my child's diet?",
+            "What vaccinations does my child need?",
+            "My child has a fever, what should I do?",
+            "How often should my child see a pediatrician?"
+          ],
+          "responses": [
+            "Improving a child's diet involves incorporating a variety of fruits, vegetables, whole grains, and lean proteins. Need help with a meal plan?",
+            "The vaccination needs depend on your child's age and health history. Let's review their vaccination record together.",
+            "If your child has a fever, monitor the temperature and keep them hydrated. If it's high or persistent, consult a healthcare provider.",
+            "Children typically see a pediatrician for regular check-ups annually, or more frequently if there are health concerns. Shall we schedule an appointment?"
+          ]
+        },
+
+        {
+          "tag": "first_aid_advice",
+          "patterns": [
+            "How do I treat a minor burn?",
+            "What's the best way to stop a nosebleed?",
+            "I've cut myself, how do I take care of it?",
+            "What should I do if someone faints?"
+          ],
+          "responses": [
+            "For a minor burn, cool the area under running water, then cover with a sterile bandage. Avoid creams or ice on the burn.",
+            "To stop a nosebleed, sit upright, lean forward, and gently pinch the soft part of the nose for about 10 minutes.",
+            "For a cut, clean it gently with water, apply an antibiotic ointment, and cover with a sterile bandage.",
+            "If someone faints, lay them on their back and raise their legs. Loosen any constrictive clothing and ensure they have plenty of air."
+          ]
+        },
+        {
+          "tag": "sexual_health",
+          "patterns": [
+            "How do I protect myself from STDs?",
+            "What are the symptoms of an STD?",
+            "Can you provide information on birth control methods?",
+            "I need advice on planning for pregnancy."
+          ],
+          "responses": [
+            "Protecting yourself from STDs includes using condoms, having regular screenings, and discussing STD testing with partners.",
+            "Symptoms of STDs can vary, but they often include unusual discharge, sores, or pain during urination. It's important to get tested if you have concerns.",
+            "There are many birth control methods available, such as pills, IUDs, implants, and more. Let's find one that works best for you.",
+            "For pregnancy planning, consider starting prenatal vitamins, tracking your cycle, and scheduling a preconception visit with a healthcare provider."
+          ]
+        },
+        {
+          "tag": "elder_care",
+          "patterns": [
+            "How can I ensure the safety of my elderly parents at home?",
+            "What are common health concerns for seniors?",
+            "Can you suggest activities for the elderly to stay active?",
+            "What should I know about dementia care?"
+          ],
+          "responses": [
+            "Ensuring safety for elderly at home can include grab bars in the bathroom, removing trip hazards, and possibly using a medical alert system.",
+            "Common health concerns for seniors include heart disease, arthritis, osteoporosis, and vision/hearing loss. Regular check-ups are important.",
+            "Activities for the elderly to stay active include walking, chair yoga, water aerobics, and gardening. Shall we explore more options?",
+            "Dementia care involves creating a safe and supportive environment, establishing a routine, and communication strategies. Would you like more detailed guidance?"
+          ]
+        },
+        {
+          "tag": "health_insurance_query",
+          "patterns": [
+            "How do I choose a health insurance plan?",
+            "What does my health insurance cover?",
+            "Can you explain my health insurance benefits?",
+            "I'm having trouble with my health insurance claim."
+          ],
+          "responses": [
+            "Choosing a health insurance plan involves considering your healthcare needs, comparing plan costs, and checking provider networks.",
+            "Health insurance coverage can vary, but typically includes doctor visits, hospital stays, preventive care, and prescriptions. Shall we review your plan?",
+            "I can help explain your health insurance benefits. Let's go over your plan details together.",
+            "If you're having trouble with a health insurance claim, review the denial letter for reasons and check if an appeal is possible. Need assistance with the process?"
+          ]
+        },
+
+        {
+          "tag": "emergency_procedures",
+          "patterns": [
+            "What do I do if I suspect a poisoning?",
+            "How should I act in the event of an electrical shock?",
+            "What are the steps to take for a choking adult?",
+            "Can you guide me through the process of CPR?"
+          ],
+          "responses": [
+            "If you suspect poisoning, do not wait for symptoms to appear and do not try home remedies. Call emergency services immediately.",
+            "For an electrical shock, do not touch the person if they're still in contact with the source. Turn off the source, and call for emergency help.",
+            "For a choking adult, ask if they can speak, cough, or breathe. If not, perform the Heimlich maneuver immediately.",
+            "I can guide you through CPR. Place the heel of your hand on the center of the chest, interlock your fingers, and press hard and fast."
+          ]
+        },
+        {
+          "tag": "mental_wellness",
+          "patterns": [
+            "What can I do to improve my mental well-being?",
+            "How can I support a friend dealing with depression?",
+            "Are there daily habits that promote mental wellness?",
+            "What professional help is available for mental health?"
+          ],
+          "responses": [
+            "Improving mental well-being can involve regular physical activity, a balanced diet, adequate sleep, and mindfulness or meditation practices.",
+            "Supporting someone with depression involves listening, offering help, encouraging them to seek therapy, and being patient with them.",
+            "Daily habits for mental wellness include setting a routine, practicing gratitude, connecting with others, and taking breaks when needed.",
+            "Professional help for mental health can come from psychologists, psychiatrists, counselors, or social workers. Would you like help finding a provider?"
+          ]
+        },
+        {
+          "tag": "substance_abuse_help",
+          "patterns": [
+            "How do I know if someone has a substance abuse problem?",
+            "What should I do if I think my teenager is using drugs?",
+            "Where can I find help for alcohol addiction?",
+            "Can you provide resources for substance abuse recovery?"
+          ],
+          "responses": [
+            "Signs of substance abuse can include changes in behavior, appearance, and health. It's important to seek professional advice if you're concerned.",
+            "If you suspect your teenager is using drugs, open a conversation without judgment and seek guidance from a healthcare professional or counselor.",
+            "Help for alcohol addiction is available through local support groups, treatment programs, and healthcare providers. Shall I look up services near you?",
+            "I can provide resources for substance abuse recovery, including support groups, rehabilitation centers, and online resources. Would you like more specific information?"
+          ]
+        },
+        {
+          "tag": "general_health_questions",
+          "patterns": [
+            "How many hours of sleep do adults need?",
+            "What's a healthy amount of water to drink each day?",
+            "Why is fiber important in the diet?",
+            "What are the benefits of quitting smoking?"
+          ],
+          "responses": [
+            "Most adults need 7-9 hours of sleep per night for optimal health. Are you having trouble sleeping?",
+            "A healthy amount of water is typically about 2 liters a day, but this can vary based on activity level and individual needs. Would you like a more personalized recommendation?",
+            "Fiber is important for digestive health, helps to regulate blood sugar levels, and can aid in achieving a healthy weight.",
+            "The benefits of quitting smoking include improved lung function, reduced risk of heart disease, and a decrease in the likelihood of developing cancer."
+          ]
+        },
+
+        {
+          "tag": "dental_health",
+          "patterns": [
+            "How often should I brush my teeth?",
+            "What are the signs of gum disease?",
+            "How do I know if I need braces?",
+            "Can you give me tips for better oral hygiene?"
+          ],
+          "responses": [
+            "It's recommended to brush your teeth twice a day with fluoride toothpaste and to floss daily.",
+            "Signs of gum disease include swollen gums, bad breath, loose teeth, and bleeding when brushing or flossing.",
+            "If you have crowded or misaligned teeth or a misaligned bite, it might be beneficial to consult with an orthodontist about braces.",
+            "For better oral hygiene, avoid sugary snacks, use an antibacterial mouthwash, and visit your dentist regularly for cleanings."
+          ]
+        },
+        {
+          "tag": "vision_and_eye_care",
+          "patterns": [
+            "How can I improve my eyesight?",
+            "What are the symptoms of eye strain?",
+            "How often should I get an eye exam?",
+            "Can staring at screens damage my eyes?"
+          ],
+          "responses": [
+            "Improving eyesight can involve regular eye exams, protective eyewear, and a diet rich in vitamins A, C, and E.",
+            "Symptoms of eye strain include headaches, blurred vision, dry eyes, and neck or shoulder pain.",
+            "Adults should have an eye exam every 1-2 years, or more frequently if recommended by an eye care professional.",
+            "Prolonged screen time can cause eye discomfort, which is often referred to as digital eye strain or computer vision syndrome."
+          ]
+        },
+        {
+          "tag": "hearing_health",
+          "patterns": [
+            "How can I protect my hearing?",
+            "What are the signs of hearing loss?",
+            "Should I be concerned about ringing in my ears?",
+            "Can hearing loss be reversed?"
+          ],
+          "responses": [
+            "Protect your hearing by avoiding loud noises, wearing ear protection in noisy environments, and keeping the volume down on personal audio devices.",
+            "Signs of hearing loss include difficulty understanding speech, frequently asking others to repeat themselves, and needing to turn up the volume on the TV or radio.",
+            "Ringing in the ears, or tinnitus, can be a sign of hearing damage, and it's a good idea to have it evaluated by a healthcare professional.",
+            "Some types of hearing loss can be treated or reversed, depending on the cause, but many types are permanent. Early intervention can help."
+          ]
+        },
+        {
+          "tag": "maternal_health",
+          "patterns": [
+            "What should I eat during pregnancy?",
+            "How much exercise is safe during pregnancy?",
+            "What prenatal tests are necessary?",
+            "Can I travel during my pregnancy?"
+          ],
+          "responses": [
+            "During pregnancy, focus on a balanced diet rich in whole grains, lean proteins, fruits, vegetables, and dairy. Avoid raw fish and excessive caffeine.",
+            "Most exercise is safe during pregnancy, but it's best to avoid high-impact sports and consult with your doctor for personalized advice.",
+            "Prenatal tests can vary, but common ones include blood tests, ultrasounds, glucose screening, and sometimes genetic testing.",
+            "Travel during pregnancy is generally safe, but it's best to discuss your travel plans with your healthcare provider, especially as you near your due date."
+          ]
+        },
+
+        {
+          "tag": "stress_management",
+          "patterns": [
+            "What are effective ways to manage stress?",
+            "How can I reduce my stress levels?",
+            "Are there any relaxation techniques for stress relief?",
+            "Can exercise help with stress?"
+          ],
+          "responses": [
+            "Effective stress management can include mindfulness, meditation, physical activity, and adequate rest.",
+            "To reduce stress levels, consider prioritizing your tasks, taking breaks when needed, and practicing deep breathing exercises.",
+            "Relaxation techniques for stress relief include progressive muscle relaxation, guided imagery, and aromatherapy.",
+            "Yes, exercise is a great stress reliever as it releases endorphins, which are natural mood lifters."
+          ]
+        },
+        {
+          "tag": "healthy_eating",
+          "patterns": [
+            "What constitutes a healthy diet?",
+            "How can I make healthier food choices?",
+            "What are some healthy snack options?",
+            "Can you help me understand nutrition labels?"
+          ],
+          "responses": [
+            "A healthy diet is balanced and includes a variety of fruits, vegetables, whole grains, lean protein, and healthy fats.",
+            "Making healthier food choices can start with planning meals in advance, choosing whole foods over processed, and watching portion sizes.",
+            "Healthy snack options include fresh fruit, nuts, yogurt, or whole-grain crackers with hummus.",
+            "Understanding nutrition labels is key to making informed food choices. Look for total calories, serving sizes, and nutrient content per serving."
+          ]
+        },
+        {
+          "tag": "hydration",
+          "patterns": [
+            "How much water should I drink each day?",
+            "What are the signs of dehydration?",
+            "Can you get water from food?",
+            "Does coffee count as water intake?"
+          ],
+          "responses": [
+            "The amount of water needed daily can vary, but a general guideline is 8-10 cups per day.",
+            "Signs of dehydration include thirst, dry mouth, fatigue, decreased urine output, and dark yellow urine.",
+            "Yes, many foods, especially fruits and vegetables, have high water content and can contribute to hydration.",
+            "Coffee does contribute to your daily fluid intake, but it's also a diuretic, so it's important to drink additional water."
+          ]
+        },
+        {
+          "tag": "sleep_quality",
+          "patterns": [
+            "How can I improve my sleep quality?",
+            "What habits can lead to a better night's sleep?",
+            "Are naps good for sleep quality?",
+            "Does the sleep environment affect sleep quality?"
+          ],
+          "responses": [
+            "Improving sleep quality can involve a regular sleep schedule, reducing caffeine and electronics before bed, and ensuring a comfortable sleep environment.",
+            "Habits for better sleep include winding down before bedtime with a book or relaxation exercises, and keeping your bedroom dark and cool.",
+            "Short naps can be beneficial, but long or irregular napping can negatively affect nighttime sleep quality.",
+            "Yes, the sleep environment is crucial for good sleep. It should be quiet, dark, and at a comfortable temperature."
+          ]
+        },
+
+        {
+          "tag": "weight_management",
+          "patterns": [
+            "How can I lose weight in a healthy way?",
+            "What is a safe amount of weight to lose per week?",
+            "Can you suggest a diet for weight management?",
+            "Are there effective exercises for weight loss?"
+          ],
+          "responses": [
+            "Healthy weight loss involves a combination of a balanced diet, regular exercise, and lifestyle changes.",
+            "A safe amount of weight to lose per week is typically 1-2 pounds. It's important to aim for slow, steady weight loss.",
+            "A balanced diet for weight management includes plenty of vegetables, lean proteins, whole grains, and healthy fats.",
+            "Effective exercises for weight loss include cardio activities like walking, cycling, and swimming, along with strength training."
+          ]
+        },
+        {
+          "tag": "sun_protection",
+          "patterns": [
+            "Why is it important to protect skin from the sun?",
+            "What SPF should I use for daily sun protection?",
+            "How often should sunscreen be reapplied?",
+            "Can the sun affect aging of the skin?"
+          ],
+          "responses": [
+            "Protecting skin from the sun helps prevent skin cancer, sunburn, and premature aging.",
+            "For daily sun protection, use a sunscreen with at least SPF 30 that blocks both UVA and UVB rays.",
+            "Sunscreen should be reapplied every two hours, or more often if swimming or sweating.",
+            "Yes, the sun can significantly affect the aging of the skin, causing wrinkles, age spots, and a loss of elasticity."
+          ]
+        },
+        {
+          "tag": "immunization",
+          "patterns": [
+            "What immunizations do adults need?",
+            "Are vaccine boosters necessary?",
+            "Can you give me the latest flu vaccine information?",
+            "Why is it important to stay up-to-date with vaccinations?"
+          ],
+          "responses": [
+            "Adult immunizations include tetanus, flu, shingles, and pneumococcal vaccines, among others, depending on age and health conditions.",
+            "Booster shots are necessary for certain vaccines to maintain immunity over time.",
+            "The latest flu vaccine is updated each year to combat the most prevalent strains. It's recommended to get the flu shot annually.",
+            "Staying up-to-date with vaccinations protects against preventable diseases and helps to maintain overall community health."
+          ]
+        },
+        {
+          "tag": "meditation_and_mindfulness",
+          "patterns": [
+            "How do I start practicing meditation?",
+            "What are the benefits of mindfulness?",
+            "Can meditation help with anxiety?",
+            "Are there different types of meditation?"
+          ],
+          "responses": [
+            "To start practicing meditation, find a quiet space, focus on your breath, and try to clear your mind for a few minutes each day.",
+            "The benefits of mindfulness include reduced stress, improved focus, better emotional regulation, and increased self-awareness.",
+            "Meditation can be very helpful for anxiety as it promotes relaxation and helps to manage stress.",
+            "There are various types of meditation, including mindfulness, loving-kindness, body scan, and transcendental meditation, among others."
+          ]
+        },
+
+        {
+          "tag": "seasonal_health",
+          "patterns": [
+            "How can I stay healthy during the winter?",
+            "What are some summer health tips?",
+            "Do allergies get worse in the spring?",
+            "How should I prepare for allergy season?"
+          ],
+          "responses": [
+            "To stay healthy in winter, get the flu vaccine, wash your hands regularly, and maintain a healthy lifestyle with good nutrition and exercise.",
+            "During summer, stay hydrated, use sunscreen, and wear lightweight clothing to prevent heat-related illnesses.",
+            "Allergies can flare up in spring due to pollen. It's a good time to start taking allergy medications if you have seasonal allergies.",
+            "To prepare for allergy season, keep windows closed on high pollen days, shower after being outdoors, and consider using an air purifier."
+          ]
+        },
+        {
+          "tag": "travel_health",
+          "patterns": [
+            "What vaccinations do I need for international travel?",
+            "How can I avoid getting sick when traveling?",
+            "What should be in my travel health kit?",
+            "Can you give me tips for avoiding jet lag?"
+          ],
+          "responses": [
+            "Vaccination needs for international travel vary by destination. Check with a travel clinic or the CDC's website for specifics.",
+            "To avoid getting sick while traveling, stay hydrated, practice good hand hygiene, and be cautious with food and water.",
+            "A travel health kit should include items like bandages, antiseptic, fever reducers, motion sickness medicine, and any prescription medications.",
+            "To avoid jet lag, adjust your sleep schedule before you travel, stay hydrated, and get plenty of sunlight once you arrive at your destination."
+          ]
+        },
+        {
+          "tag": "occupational_health",
+          "patterns": [
+            "How can I improve my posture at work?",
+            "What are some tips for eye health in the office?",
+            "How often should I take breaks at work?",
+            "Can you suggest ergonomic office equipment?"
+          ],
+          "responses": [
+            "To improve posture, ensure your work desk and chair are at the correct height, and your feet are flat on the floor.",
+            "For eye health in the office, follow the 20-20-20 rule: every 20 minutes, look at something 20 feet away for at least 20 seconds.",
+            "It's recommended to take short breaks every hour to reduce the risk of strain and fatigue.",
+            "Ergonomic office equipment includes adjustable chairs, standing desks, and keyboards designed to reduce strain on your hands and wrists."
+          ]
+        },
+        {
+          "tag": "alternative_therapies",
+          "patterns": [
+            "What are some common alternative therapies?",
+            "Can acupuncture help with pain management?",
+            "Is chiropractic care effective for back pain?",
+            "What should I know about herbal supplements?"
+          ],
+          "responses": [
+            "Common alternative therapies include acupuncture, chiropractic care, herbal supplements, and massage therapy.",
+            "Acupuncture can be effective for certain types of pain management. It's best to consult with a licensed practitioner.",
+            "Chiropractic care can be effective for some individuals with back pain, but it's important to have a thorough evaluation first.",
+            "When considering herbal supplements, it's important to research their effectiveness and potential interactions with other medications."
+          ]
+        },
+
+        {
+          "tag": "pediatric_care",
+          "patterns": [
+            "How can I improve my child's immune system?",
+            "What are the common signs of ADHD in children?",
+            "How do I know if my child's growth is on track?",
+            "What vaccinations are required for school entry?"
+          ],
+          "responses": [
+            "Boosting a child's immune system can be supported by a balanced diet, regular physical activity, adequate sleep, and good hygiene.",
+            "Common signs of ADHD in children include inattention, hyperactivity, and impulsivity that are inconsistent with their developmental level.",
+            "To track your child's growth, regular check-ups with a pediatrician are recommended to measure and chart their progress.",
+            "Vaccinations required for school entry typically include measles, mumps, rubella (MMR), polio, hepatitis B, and chickenpox, but may vary by region."
+          ]
+        },
+        {
+          "tag": "mental_health_awareness",
+          "patterns": [
+            "How can I recognize signs of mental health issues?",
+            "What should I do if I suspect a loved one has a mental health problem?",
+            "How do I promote mental health awareness in my community?",
+            "What resources are available for mental health support?"
+          ],
+          "responses": [
+            "Signs of mental health issues can include changes in mood, energy level, eating or sleeping patterns, and withdrawal from people and activities.",
+            "If you suspect a loved one is struggling with mental health, approach them with care, encourage them to seek professional help, and offer your support.",
+            "To promote mental health awareness, you can organize community events, share information, and advocate for mental health education and resources.",
+            "Resources for mental health support include hotlines, counseling services, support groups, and mental health professionals."
+          ]
+        },
+        {
+          "tag": "nutrition_and_dietetics",
+          "patterns": [
+            "Can you explain the role of carbohydrates in a diet?",
+            "What is the importance of protein for muscle repair?",
+            "How much fat should be included in a daily diet?",
+            "Why are vitamins and minerals essential?"
+          ],
+          "responses": [
+            "Carbohydrates are important for energy, but it's best to choose complex carbs like whole grains, fruits, and vegetables over simple sugars.",
+            "Protein is crucial for muscle repair and growth, especially after exercise, as it helps to rebuild muscle tissue.",
+            "Dietary fat is essential for energy, cell growth, and to absorb certain nutrients, but should be limited to healthy fats in moderation.",
+            "Vitamins and minerals are essential for body functions such as energy production, immune response, and bone health."
+          ]
+        },
+        {
+          "tag": "home_safety",
+          "patterns": [
+            "How can I make my home safer for young children?",
+            "What are the best ways to prevent home accidents?",
+            "Are there any specific home safety tips for the elderly?",
+            "How often should smoke detectors be checked?"
+          ],
+          "responses": [
+            "To make your home safer for children, use safety gates, secure heavy furniture, cover electrical outlets, and keep hazardous substances out of reach.",
+            "Preventing home accidents can include keeping floors free of clutter, using non-slip mats, and ensuring adequate lighting.",
+            "For elderly safety, install grab bars in the bathroom, remove trip hazards, and consider a personal emergency response system.",
+            "Smoke detectors should be tested monthly, and batteries should be replaced at least once a year or as needed."
+          ]
+        },
+
+        {
+          "tag": "pediatric_care",
+          "patterns": [
+            "How can I improve my child's immune system?",
+            "What are the common signs of ADHD in children?",
+            "How do I know if my child's growth is on track?",
+            "What vaccinations are required for school entry?"
+          ],
+          "responses": [
+            "Boosting a child's immune system can be supported by a balanced diet, regular physical activity, adequate sleep, and good hygiene.",
+            "Common signs of ADHD in children include inattention, hyperactivity, and impulsivity that are inconsistent with their developmental level.",
+            "To track your child's growth, regular check-ups with a pediatrician are recommended to measure and chart their progress.",
+            "Vaccinations required for school entry typically include measles, mumps, rubella (MMR), polio, hepatitis B, and chickenpox, but may vary by region."
+          ]
+        },
+        {
+          "tag": "mental_health_awareness",
+          "patterns": [
+            "How can I recognize signs of mental health issues?",
+            "What should I do if I suspect a loved one has a mental health problem?",
+            "How do I promote mental health awareness in my community?",
+            "What resources are available for mental health support?"
+          ],
+          "responses": [
+            "Signs of mental health issues can include changes in mood, energy level, eating or sleeping patterns, and withdrawal from people and activities.",
+            "If you suspect a loved one is struggling with mental health, approach them with care, encourage them to seek professional help, and offer your support.",
+            "To promote mental health awareness, you can organize community events, share information, and advocate for mental health education and resources.",
+            "Resources for mental health support include hotlines, counseling services, support groups, and mental health professionals."
+          ]
+        },
+        {
+          "tag": "nutrition_and_dietetics",
+          "patterns": [
+            "Can you explain the role of carbohydrates in a diet?",
+            "What is the importance of protein for muscle repair?",
+            "How much fat should be included in a daily diet?",
+            "Why are vitamins and minerals essential?"
+          ],
+          "responses": [
+            "Carbohydrates are important for energy, but it's best to choose complex carbs like whole grains, fruits, and vegetables over simple sugars.",
+            "Protein is crucial for muscle repair and growth, especially after exercise, as it helps to rebuild muscle tissue.",
+            "Dietary fat is essential for energy, cell growth, and to absorb certain nutrients, but should be limited to healthy fats in moderation.",
+            "Vitamins and minerals are essential for body functions such as energy production, immune response, and bone health."
+          ]
+        },
+        {
+          "tag": "home_safety",
+          "patterns": [
+            "How can I make my home safer for young children?",
+            "What are the best ways to prevent home accidents?",
+            "Are there any specific home safety tips for the elderly?",
+            "How often should smoke detectors be checked?"
+          ],
+          "responses": [
+            "To make your home safer for children, use safety gates, secure heavy furniture, cover electrical outlets, and keep hazardous substances out of reach.",
+            "Preventing home accidents can include keeping floors free of clutter, using non-slip mats, and ensuring adequate lighting.",
+            "For elderly safety, install grab bars in the bathroom, remove trip hazards, and consider a personal emergency response system.",
+            "Smoke detectors should be tested monthly, and batteries should be replaced at least once a year or as needed."
+          ]
+        },
+
+        {
+          "tag": "pediatric_care",
+          "patterns": [
+            "How can I improve my child's immune system?",
+            "What are the common signs of ADHD in children?",
+            "How do I know if my child's growth is on track?",
+            "What vaccinations are required for school entry?"
+          ],
+          "responses": [
+            "Boosting a child's immune system can be supported by a balanced diet, regular physical activity, adequate sleep, and good hygiene.",
+            "Common signs of ADHD in children include inattention, hyperactivity, and impulsivity that are inconsistent with their developmental level.",
+            "To track your child's growth, regular check-ups with a pediatrician are recommended to measure and chart their progress.",
+            "Vaccinations required for school entry typically include measles, mumps, rubella (MMR), polio, hepatitis B, and chickenpox, but may vary by region."
+          ]
+        },
+        {
+          "tag": "mental_health_awareness",
+          "patterns": [
+            "How can I recognize signs of mental health issues?",
+            "What should I do if I suspect a loved one has a mental health problem?",
+            "How do I promote mental health awareness in my community?",
+            "What resources are available for mental health support?"
+          ],
+          "responses": [
+            "Signs of mental health issues can include changes in mood, energy level, eating or sleeping patterns, and withdrawal from people and activities.",
+            "If you suspect a loved one is struggling with mental health, approach them with care, encourage them to seek professional help, and offer your support.",
+            "To promote mental health awareness, you can organize community events, share information, and advocate for mental health education and resources.",
+            "Resources for mental health support include hotlines, counseling services, support groups, and mental health professionals."
+          ]
+        },
+        {
+          "tag": "nutrition_and_dietetics",
+          "patterns": [
+            "Can you explain the role of carbohydrates in a diet?",
+            "What is the importance of protein for muscle repair?",
+            "How much fat should be included in a daily diet?",
+            "Why are vitamins and minerals essential?"
+          ],
+          "responses": [
+            "Carbohydrates are important for energy, but it's best to choose complex carbs like whole grains, fruits, and vegetables over simple sugars.",
+            "Protein is crucial for muscle repair and growth, especially after exercise, as it helps to rebuild muscle tissue.",
+            "Dietary fat is essential for energy, cell growth, and to absorb certain nutrients, but should be limited to healthy fats in moderation.",
+            "Vitamins and minerals are essential for body functions such as energy production, immune response, and bone health."
+          ]
+        },
+        {
+          "tag": "home_safety",
+          "patterns": [
+            "How can I make my home safer for young children?",
+            "What are the best ways to prevent home accidents?",
+            "Are there any specific home safety tips for the elderly?",
+            "How often should smoke detectors be checked?"
+          ],
+          "responses": [
+            "To make your home safer for children, use safety gates, secure heavy furniture, cover electrical outlets, and keep hazardous substances out of reach.",
+            "Preventing home accidents can include keeping floors free of clutter, using non-slip mats, and ensuring adequate lighting.",
+            "For elderly safety, install grab bars in the bathroom, remove trip hazards, and consider a personal emergency response system.",
+            "Smoke detectors should be tested monthly, and batteries should be replaced at least once a year or as needed."
+          ]
+        },
+
+        {
+          "tag": "infant_sleep_patterns",
+          "patterns": [
+            "How many hours should my infant sleep?",
+            "My baby wakes up frequently at night, what can I do?",
+            "Is it normal for my infant to sleep so much?",
+            "How can I establish a sleep routine for my baby?"
+          ],
+          "responses": [
+            "Newborns typically sleep about 14 to 17 hours a day in several naps. Sleep patterns can vary widely and change as they grow.",
+            "Frequent wake-ups can be normal, especially in the early months. Ensure your baby is comfortable, fed, and has a consistent bedtime routine.",
+            "High amounts of sleep are normal for infants, but if you're concerned about excessive sleepiness or lethargy, consult your pediatrician.",
+            "Establishing a sleep routine can involve setting consistent nap and bedtime schedules, creating a calming pre-sleep routine, and ensuring a sleep-conducive environment."
+          ]
+        },
+        {
+          "tag": "infant_vaccinations",
+          "patterns": [
+            "What is the recommended vaccination schedule for infants?",
+            "Are there any risks associated with infant vaccinations?",
+            "Can my baby get their vaccinations if they have a cold?",
+            "Why are vaccinations important for my infant?"
+          ],
+          "responses": [
+            "The recommended vaccination schedule for infants typically includes shots at birth, 2 months, 4 months, 6 months, and 12 months. Your pediatrician will provide a detailed schedule.",
+            "Vaccinations are generally safe, but like any medication, they can have side effects. Serious adverse effects are rare.",
+            "If your baby has a mild cold, they can usually still be vaccinated, but it's best to discuss any illnesses with your pediatrician beforehand.",
+            "Vaccinations are important to protect infants from serious diseases that can cause hospitalization and sometimes be life-threatening."
+          ]
+        },
+        {
+          "tag": "infant_hearing_and_vision",
+          "patterns": [
+            "How is infant hearing tested?",
+            "What should I do if I think my baby has a hearing problem?",
+            "When will my baby's vision be fully developed?",
+            "How can I tell if my infant has vision problems?"
+          ],
+          "responses": [
+            "Infant hearing is typically tested shortly after birth using automated auditory brainstem response (AABR) or otoacoustic emissions (OAE) tests.",
+            "If you suspect a hearing problem, have your baby evaluated by a pediatric audiologist as soon as possible.",
+            "A baby's vision will continue to develop over the first year of life, with full color vision developing around 4 to 6 months.",
+            "Signs of vision problems in infants can include a lack of eye contact, not following objects with their eyes, or eyes that don't move together."
+          ]
+        },
+        {
+          "tag": "infant_teething",
+          "patterns": [
+            "When do babies usually start teething?",
+            "How can I soothe my teething baby?",
+            "My baby is drooling a lot, is this due to teething?",
+            "What are the signs that my baby's first tooth is coming in?"
+          ],
+          "responses": [
+            "Babies typically start teething around 6 months of age, but it can start as early as 3 months or as late as 12 months.",
+            "To soothe a teething baby, you can give them a cold teething ring or gently rub their gums with a clean finger.",
+            "Excessive drooling can be a sign of teething as the process of chewing and biting stimulates saliva production.",
+            "Signs of the first tooth coming in include gum swelling and tenderness, increased drooling, and sometimes a slight increase in temperature."
+          ]
+        },
+        {
+          "tag": "infant_allergies",
+          "patterns": [
+            "Can infants have allergies?",
+            "How can I tell if my baby is allergic to something?",
+            "What are common allergens for infants?",
+            "Should I avoid certain foods while breastfeeding to prevent allergies?"
+          ],
+          "responses": [
+            "Yes, infants can have allergies, though they typically present differently than in older children or adults.",
+            "Signs of an allergy in an infant can include hives, eczema, vomiting, diarrhea, or severe symptoms like difficulty breathing, which would require immediate medical attention.",
+            "Common allergens for infants can include cow's milk, eggs, peanuts, tree nuts, soy, wheat, and some fruits and vegetables.",
+            "While breastfeeding, it's generally not necessary to avoid certain foods unless your baby has been diagnosed with an allergy or there is a strong family history of food allergies."
+          ]
+        },
+
+        {
+          "tag": "patient_update",
+          "patterns": [
+            "Any updates on my patient's condition?",
+            "How is the patient doing today?",
+            "Can you provide the latest health metrics?",
+            "What's the current status of the patient I'm monitoring?"
+          ],
+          "responses": [
+            "Let me pull up the latest information. Which patient are we discussing?",
+            "The patient's condition is stable with no new symptoms. Do you need details on specific metrics?",
+            "I have the latest health metrics here. Which ones are you interested in?",
+            "The current status is as follows... [insert patient status update]. Do you need information on anything else?"
+          ]
+        },
+        {
+          "tag": "emergency_protocol",
+          "patterns": [
+            "What's the protocol for a heart attack?",
+            "I think my patient is having a stroke, what should I do?",
+            "How to respond to a seizure?",
+            "What are the first steps for a suspected overdose?"
+          ],
+          "responses": [
+            "For a heart attack, call emergency services immediately and begin CPR if trained. Would you like me to guide you?",
+            "For a suspected stroke, time is crucial. Call emergency immediately and monitor vital signs.",
+            "During a seizure, keep the patient safe and away from harm. Time the seizure, and if it lasts over 5 minutes, call emergency services.",
+            "For a suspected overdose, assess the patient's consciousness and call emergency services. Do not induce vomiting unless instructed by poison control."
+          ]
+        },
+
+        {
+          "tag": "lab_results_interpretation",
+          "patterns": [
+            "Help me understand these lab results",
+            "Can you explain what this lab value means?",
+            "What should I make of this blood test?",
+            "Are these lab results normal?"
+          ],
+          "responses": [
+            "Sure, I can help. Please provide the specific lab results you're inquiring about.",
+            "I'm here to assist. Which lab value are you concerned about?",
+            "Blood tests can be complex. Let's go through them together. What are the results?",
+            "Lab results vary by individual. Can you give me the parameters you're reviewing?"
+          ]
+        },
+        {
+          "tag": "symptom_clarification",
+          "patterns": [
+            "What does a tingling sensation in the hands indicate?",
+            "Can you tell me more about night sweats?",
+            "What might cause a sudden drop in weight?",
+            "Why would someone feel fatigued all the time?"
+          ],
+          "responses": [
+            "Tingling in the hands can be due to various conditions, from nerve damage to nutrient deficiencies.",
+            "Night sweats can be a symptom of many things including infection or hormonal imbalances. Any other symptoms?",
+            "A sudden drop in weight should be investigated further. It can be a sign of an underlying health issue.",
+            "Chronic fatigue can result from a range of factors, including sleep disorders, depression, or chronic fatigue syndrome."
+          ]
+        },
+        {
+          "tag": "referral_advice",
+          "patterns": [
+            "Should this case be referred to a cardiologist?",
+            "When is it appropriate to send someone to a neurologist?",
+            "Do you think this patient needs to see an endocrinologist?",
+            "Is a referral to a gastroenterologist warranted here?"
+          ],
+          "responses": [
+            "If there are heart-related symptoms or concerns, a cardiologist referral would be prudent.",
+            "Neurologist referrals are typically for symptoms affecting the nervous system. Can you describe the symptoms?",
+            "Endocrinologists deal with hormone-related disorders. What are the patient's symptoms or diagnosis?",
+            "Gastrointestinal symptoms or unexplained abdominal issues often warrant a gastroenterologist's opinion."
+          ]
+        },
+        {
+          "tag": "treatment_options",
+          "patterns": [
+            "What are the treatment options for type 2 diabetes?",
+            "Can you list the possible treatments for chronic kidney disease?",
+            "What do we do about recurrent asthma attacks?",
+            "How do you treat someone with persistent migraines?"
+          ],
+          "responses": [
+            "Type 2 diabetes treatment often includes lifestyle changes, oral medications, and sometimes insulin therapy.",
+            "Chronic kidney disease treatments range from dietary changes to medications to dialysis, depending on severity.",
+            "For recurrent asthma, maintenance inhalers and lifestyle modifications are key, with rescue inhalers for acute attacks.",
+            "Persistent migraines can be treated with various medications, stress management techniques, and lifestyle adjustments."
+          ]
+        },
+      
+      {
+        "tag": "diagnosis_help",
+        "patterns": [
+          "Can you help me with a diagnosis?",
+          "I need assistance with a medical case",
+          "Help me understand these symptoms",
+          "What does this symptom indicate?"
+        ],
+        "responses": [
+          "Of course, I can help with a diagnosis. What symptoms are we looking at?",
+          "I'm here to assist. Tell me more about the medical case.",
+          "Let's go over the symptoms together. What are the main concerns?",
+          "Symptoms can be indicative of many conditions. Can you provide more details?"
+        ]
+      },
+      {
+        "tag": "specific_question",
+        "patterns": [
+          "What causes headaches?",
+          "Why is the patient experiencing dizziness?",
+          "Could this rash be an allergic reaction?",
+          "Is shortness of breath a sign of asthma?"
+        ],
+        "responses": [
+          "Headaches can be caused by various factors. Have you noted any triggers?",
+          "Dizziness can stem from multiple sources. Does the patient have any other accompanying symptoms?",
+          "Rashes are common in allergies. Have there been any recent exposures to new substances?",
+          "Shortness of breath can be a sign of asthma, especially if there's a wheezing sound. Is there a history of asthma or allergies?"
+        ]
+      },
+      {
+        "tag": "follow_up",
+        "patterns": [
+          "What should be the next step?",
+          "How do I proceed with the treatment?",
+          "What are the recommended tests?",
+          "Should I refer the patient to a specialist?"
+        ],
+        "responses": [
+          "The next step might include further testing. Have all the initial screenings been done?",
+          "Treatment depends on the diagnosis. Let's narrow down the causes first.",
+          "I recommend a complete blood count, and depending on symptoms, possibly an MRI.",
+          "A specialist referral could be beneficial. Would you like me to find nearby experts?"
+        ]
+      },
+
+        {
+          "tag": "greeting",
+          "patterns": [
+            "Hello, Iris",
+            "Good morning, Iris",
+            "Greetings, iris",
+            "Hi there, iris",
+            "Hey",
+            "What's up, Iris",
+            "How's it going",
+            "Howdy"
+          ],
+          "responses": [
+            "Good morning, sir. How may I assist you today?",
+            "Greetings. What can I help you with",
+            "Hello! I'm at your service.",
+           
+            "Hey there! Ready to assist you with anything you need.",
+            "What's up? Here to help you out!",
+            "It's going great, thanks for asking! How can I help you today?",
+            "Howdy! What can I do for you today?"
+          ]
+        },
+        
+
+      
+        {
+          "tag": "Psoriasis",
+          "patterns": [
+            "I've noticed red patches of skin covered with thick, silvery scales...",
+            "There are small scaling spots on my skin, predominantly on my torso...",
+            "My nails have become pitted, ridged, and I'm losing them...",
+            "I've been experiencing stiff and swollen joints alongside skin problems...",
+            "I have itchy, burning, and sore skin...",
+            "My skin gets very dry and can crack and bleed...",
+            "I see patches that are thick and red with white scales on top..."
+          ],
+          "responses": [
+            "It's important to keep your skin moisturized. Look for over-the-counter products that contain salicylic acid or coal tar for relief.",
+            "Consider talking to your healthcare provider about phototherapy. Carefully managed exposure to sunlight can improve symptoms.",
+            "Remember, while psoriasis is not curable, it can be managed. Stress reduction, a healthy diet, and avoiding triggers are key.",
+            "You might want to discuss prescription options with a dermatologist, such as topical treatments, oral medications, or biologics.",
+            "Regular exercise can help reduce joint stiffness and swelling. Swimming can be particularly beneficial for psoriatic arthritis.",
+            "Keep the affected skin clean and covered to help reduce irritation and protect the skin. Avoid scratching to prevent infection.",
+            "I'm here to support you in managing psoriasis. Together, we can find the best approach to keep your symptoms at bay."
+          ]
+        },
+
+        {
+          "tag": "Type 2 Diabetes",
+          "patterns": [
+            "I've been feeling very thirsty and urinating more often than usual...",
+            "I'm experiencing unexpected weight loss and feeling very tired...",
+            "I have cuts or wounds that heal very slowly...",
+            "I've noticed tingling, numbness, or pain in my hands or feet...",
+            "I am always hungry, even though I eat regularly...",
+            "My vision has become blurry and I can't see details..."
+          ],
+          "responses": [
+            "Staying hydrated is important, but excessive thirst can be a sign of high blood sugar levels. It's wise to consult a healthcare provider.",
+            "Sudden weight loss and fatigue may indicate your body isn’t able to get energy from food and is instead breaking down fats and muscles for energy. A medical check-up is advisable.",
+            "Slow healing of wounds, especially on the feet, is a common concern for diabetes. Keeping blood sugar levels under control is crucial.",
+            "Nerve damage due to high blood sugar can cause sensations like tingling or pain. Proper diabetes management and regular foot care are important.",
+            "Feeling constantly hungry can be related to insulin resistance. Eating complex carbohydrates and proteins can help manage hunger pangs.",
+            "Blurry vision may result from high blood sugar levels affecting your eye's ability to focus. If symptoms persist, please see an eye specialist immediately."
+          ]
+        },
+
+        {
+          "tag": "Anxiety",
+          "patterns": [
+            "I often feel worried or uneasy without a clear reason...",
+            "I have physical symptoms like a racing heart or sweating when anxious...",
+            "My worries interfere with my daily life and activities..."
+          ],
+          "responses": [
+            "These feelings may be related to an anxiety disorder. It's important to talk about your symptoms with a healthcare professional.",
+            "Regular exercise and stress management techniques can be beneficial in managing anxiety symptoms.",
+            "A healthcare provider may discuss therapy options or medications to help control anxiety."
+          ]
+        },
+    
+        {
+          "tag": "AcidReflux",
+          "patterns": [
+            "I get a burning sensation in my chest after eating...",
+            "I often have a sour taste in my mouth or feel like food is coming back up...",
+            "I have difficulty swallowing and a feeling of food being stuck in my throat..."
+          ],
+          "responses": [
+            "These symptoms could suggest acid reflux. Avoiding spicy and fatty foods, eating smaller meals, and not lying down after eating may help.",
+            "Over-the-counter antacids can provide quick relief, but if symptoms are frequent, a healthcare provider might prescribe stronger medication.",
+            "Modifying eating habits and lifestyle changes are often recommended to manage acid reflux symptoms."
+          ]
+        },
+    
+        {
+          "tag": "Diabetes",
+          "patterns": [
+            "I'm frequently thirsty and have to urinate often...",
+            "I've been experiencing unexplained weight loss and feel hungry all the time...",
+            "I have wounds that heal slowly and often feel fatigued..."
+          ],
+          "responses": [
+            "These could be symptoms of diabetes and should be checked by a healthcare provider.",
+            "Maintaining a healthy diet, regular physical activity, and monitoring your blood sugar levels are crucial in managing diabetes.",
+            "Depending on the type of diabetes, medication or insulin therapy may be required to control blood glucose levels."
+          ]
+        },
+
+
+        {
+          "tag": "Depression",
+          "patterns": [
+            "I've been feeling persistently sad and hopeless...",
+            "I've lost interest in activities I used to enjoy...",
+            "I struggle with fatigue and have trouble concentrating..."
+          ],
+          "responses": [
+            "These symptoms can be indicative of depression, a common but serious mood disorder.",
+            "Seeking support from friends and family, as well as professional counseling or therapy, can be very effective.",
+            "In some cases, antidepressant medications may be prescribed to help alleviate symptoms."
+          ]
+        },
+    
+        {
+          "tag": "Asthma",
+          "patterns": [
+            "I have difficulty breathing and often wheeze when exhaling...",
+            "I frequently have a tight feeling in my chest...",
+            "Colds seem to go straight to my chest and take a long time to clear up..."
+          ],
+          "responses": [
+            "These symptoms might suggest asthma, a condition where airways narrow and swell, producing extra mucus.",
+            "Avoiding asthma triggers and using an asthma action plan can be crucial in managing symptoms.",
+            "Inhalers, both rescue and preventive, are commonly used to treat asthma, along with other medications if necessary."
+          ]
+        },
+    
+        {
+          "tag": "Allergies",
+          "patterns": [
+            "I get itchy, watery eyes and a runny nose during certain seasons...",
+            "I break out in hives and have a rash after eating certain foods...",
+            "I experience sneezing fits and have a scratchy throat regularly..."
+          ],
+          "responses": [
+            "These symptoms often point to allergic reactions, which occur when the immune system reacts to a foreign substance.",
+            "Identifying and avoiding allergens is a key step in managing allergy symptoms.",
+            "Over-the-counter antihistamines, nasal sprays, and decongestants may relieve symptoms; severe cases might require prescription medication or allergy shots."
+          ]
+        },
+    
+        {
+          "tag": "Arthritis",
+          "patterns": [
+            "I have joint pain and stiffness that worsens with age...",
+            "My joints are swollen and sometimes warm to the touch...",
+            "I find it hard to move the affected joints and they seem to be losing strength..."
+          ],
+          "responses": [
+            "Joint symptoms like these can be indicative of arthritis, of which there are several types.",
+            "Physical therapy and exercise tailored to your condition can help maintain joint function.",
+            "Medications, including anti-inflammatories and pain relievers, can manage pain, and in some cases, surgery might be considered."
+          ]
+        },
+    
+    
+
+        {
+          "tag": "Migraine",
+          "patterns": [
+            "I experience severe headaches that last for hours or even days...",
+            "I'm sensitive to light and sound when I have a headache...",
+            "I sometimes see spots or flashing lights before a headache starts..."
+          ],
+          "responses": [
+            "These symptoms could indicate a migraine. Identifying and avoiding migraine triggers can be an effective way to manage them.",
+            "Over-the-counter pain relief can be effective, but if migraines are frequent or severe, prescription medications may be necessary.",
+            "It's also beneficial to maintain a headache diary to track the frequency and triggers of your migraines for your healthcare provider."
+          ]
+        },
+
+        {
+          "tag": "Depression",
+          "patterns": [
+            "I've been feeling persistently sad and have lost interest in activities I used to enjoy...",
+            "I'm having trouble sleeping and feel tired all the time...",
+            "I feel hopeless and have trouble concentrating on my daily tasks..."
+          ],
+          "responses": [
+            "These feelings can be indicative of depression. It's important to talk to someone about how you're feeling, whether it's a loved one or a professional.",
+            "Regular physical activity, a healthy diet, and a regular sleep schedule can help manage symptoms of depression.",
+            "If you're having thoughts of self-harm or suicide, it's crucial to seek immediate help from a healthcare professional or a crisis hotline."
+          ]
+        },
+
+        {
+          "tag": "GERD",
+          "patterns": [
+            "I often have heartburn and a sour taste in the mouth...",
+            "I experience chest pain after eating or when lying down...",
+            "I have difficulty swallowing and feel like food is stuck in my throat..."
+          ],
+          "responses": [
+            "These can be signs of acid reflux. It's recommended to eat smaller meals, avoid lying down after eating, and avoid spicy and fatty foods.",
+            "Over-the-counter antacids may provide temporary relief, but if symptoms persist, please consult a healthcare provider.",
+            "Chronic GERD can lead to more serious conditions, so it's important to get a proper diagnosis and treatment plan."
+          ]
+        },
+
+        {
+          "tag": "Asthma",
+          "patterns": [
+            "I've been wheezing and coughing a lot, especially at night...",
+            "I feel a tightness in my chest and it's hard to catch my breath...",
+            "My breathing problems get worse when I exercise or are exposed to cold air..."
+          ],
+          "responses": [
+            "These are common asthma symptoms. Avoiding triggers and using prescribed inhalers can help manage these symptoms.",
+            "Regular check-ups with a pulmonologist are crucial for maintaining good asthma control.",
+            "Consider developing an asthma action plan with your healthcare provider to know what to do during an asthma attack."
+          ]
+        },
+
+        {
+          "tag": "Hypertension",
+          "patterns": [
+            "I often have headaches and sometimes dizziness...",
+            "My heart sometimes beats fast, and I feel short of breath...",
+            "I feel chest pain and palpitations occasionally...",
+            "I've been experiencing nosebleeds more frequently..."
+          ],
+          "responses": [
+            "These symptoms may be indicative of high blood pressure. It's important to monitor your blood pressure regularly.",
+            "Limiting salt intake, regular exercise, and stress management can help control hypertension. Please consult your doctor.",
+            "If chest pain or shortness of breath is severe or persistent, seek immediate medical attention as these can be signs of a hypertensive crisis."
+          ]
+        },
+
+        {
+          "tag": "UTI",
+          "patterns": [
+            "It burns when I urinate...",
+            "I need to go to the bathroom more often than usual...",
+            "My urine looks cloudy, and sometimes it's tinged with blood...",
+            "I have pain in my lower abdomen..."
+          ],
+          "responses": [
+            "Drinking plenty of water can help flush out the urinary tract and relieve symptoms.",
+            "Cranberry juice or supplements might prevent UTIs, but they are not a cure. Antibiotics are usually required for treatment.",
+            "It's important to see a healthcare provider for proper diagnosis and treatment to prevent the infection from spreading."
+          ]
+        },
+
+        {
+          "tag": "Headache",
+          "patterns": [
+            "I've been getting headaches frequently...",
+            "There's a constant pounding in my head...",
+            "I feel pressure around my forehead and temples...",
+            "Light and sound seem to make my headaches worse..."
+          ],
+          "responses": [
+            "Regular rest and staying hydrated can alleviate headache symptoms.",
+            "Over-the-counter pain relief medications like ibuprofen or acetaminophen may help.",
+            "If headaches persist or worsen, it's important to consult a healthcare provider."
+          ]
+        },
+        {
+          "tag": "Insomnia",
+          "patterns": [
+            "I have trouble falling asleep at night...",
+            "I wake up several times throughout the night...",
+            "I feel tired during the day because I can't sleep well...",
+            "My mind won't stop racing when I try to go to bed..."
+          ],
+          "responses": [
+            "Establishing a regular sleep schedule and a bedtime routine can promote better sleep.",
+            "Avoiding screens and heavy meals before bedtime may improve sleep quality.",
+            "If insomnia continues, consider speaking with a healthcare provider about possible treatments."
+          ]
+        },
+        {
+          "tag": "Allergies",
+          "patterns": [
+            "I can't stop sneezing and my eyes are itchy...",
+            "I have a runny nose and my throat is scratchy...",
+            "Every time I go outside, I start to feel worse...",
+            "I'm allergic to pollen and pet dander..."
+          ],
+          "responses": [
+            "Antihistamines can help manage allergy symptoms.",
+            "Keeping windows closed and using air purifiers may reduce indoor allergens.",
+            "Consulting with an allergist can provide more personalized treatment options."
+          ]
+        },
+        {
+          "tag": "Stress",
+          "patterns": [
+            "I've been feeling overwhelmed and anxious...",
+            "My job is causing me a lot of stress...",
+            "I can't seem to relax or find time for myself...",
+            "I feel tense all the time and have trouble unwinding..."
+          ],
+          "responses": [
+            "Mindfulness and meditation may help reduce stress levels.",
+            "Regular physical activity and hobbies can be effective stress relievers.",
+            "If stress is interfering with daily life, seeking the help of a mental health professional is advisable."
+          ]
+        },
+
+        {
+          "tag": "Type 2 Diabetes",
+          "patterns": [
+            "I've been feeling very thirsty and urinating more often than usual...",
+            "I'm experiencing unexpected weight loss and feeling very tired...",
+            "I have cuts or wounds that heal very slowly...",
+            "I've noticed tingling, numbness, or pain in my hands or feet...",
+            "I am always hungry, even though I eat regularly...",
+            "My vision has become blurry and I can't see details...",
+            "My mouth is dry no matter how much water I drink...",
+            "I'm losing weight without trying and it's concerning...",
+            "There's a tingling sensation in my extremities that won't go away...",
+            "Food doesn't seem to satisfy my hunger like it used to...",
+            "Lately, my eyesight is fuzzy and I struggle to focus on small print..."
+          ],
+          "responses": [
+            "Staying hydrated is important, but excessive thirst can be a sign of high blood sugar levels. It's wise to consult a healthcare provider.",
+            "Sudden weight loss and fatigue may indicate your body isn’t able to get energy from food and is instead breaking down fats and muscles for energy. A medical check-up is advisable.",
+            "Slow healing of wounds, especially on the feet, is a common concern for diabetes. Keeping blood sugar levels under control is crucial.",
+            "Nerve damage due to high blood sugar can cause sensations like tingling or pain. Proper diabetes management and regular foot care are important.",
+            "Feeling constantly hungry can be related to insulin resistance. Eating complex carbohydrates and proteins can help manage hunger pangs.",
+            "Blurry vision may result from high blood sugar levels affecting your eye's ability to focus. If symptoms persist, please see an eye specialist immediately.",
+            "Dry mouth can be another symptom of high blood sugar. Monitor your glucose levels and see a doctor for a comprehensive evaluation.",
+            "Unintentional weight loss should not be ignored as it could signify an underlying issue like diabetes. Please speak with a healthcare professional."
+          ]
+        },
+        
+        
+
+
+        {
+          "tag": "UTI",
+          "patterns": [
+            "It burns when I urinate...",
+            "I need to go to the bathroom more often than usual...",
+            "My urine looks cloudy, and sometimes it's tinged with blood...",
+            "I have pain in my lower abdomen..."
+          ],
+          "responses": [
+            "Drinking plenty of water can help flush out the urinary tract and relieve symptoms.",
+            "Cranberry juice or supplements might prevent UTIs, but they are not a cure. Antibiotics are usually required for treatment.",
+            "It's important to see a healthcare provider for proper diagnosis and treatment to prevent the infection from spreading."
+          ]
+        },
+
+        {
+          "tag": "Insomnia",
+          "patterns": [
+            "I have trouble falling asleep at night...",
+            "I wake up during the night and can't go back to sleep...",
+            "I wake up too early in the morning and feel tired during the day...",
+            "Even when I sleep, I feel like it's not restful..."
+          ],
+          "responses": [
+            "Establishing a regular sleep routine and ensuring a comfortable sleep environment may improve your sleep.",
+            "Avoiding caffeine, heavy meals, and electronics before bed can also help combat insomnia.",
+            "Cognitive Behavioral Therapy for Insomnia (CBT-I) has been effective for many people. Consider speaking to a professional."
+          ]
+        },
+
+        {
+          "tag": "IBS",
+          "patterns": [
+            "I often have abdominal pain and bloating...",
+            "I experience constipation and sometimes diarrhea...",
+            "Eating certain foods seems to trigger my stomach discomfort...",
+            "I feel gassy and have mucus in my stool..."
+          ],
+          "responses": [
+            "Dietary changes, such as increasing fiber intake or eliminating trigger foods, may alleviate IBS symptoms.",
+            "Stress management techniques, like mindfulness and yoga, can also help manage IBS.",
+            "For persistent or severe symptoms, it's important to consult with a gastroenterologist for targeted treatments."
+          ]
+        },
+
+        {
+          "tag": "Osteoarthritis",
+          "patterns": [
+            "My joints are stiff, especially in the morning...",
+            "I hear a cracking or clicking sound when I bend my knees...",
+            "The joints in my hands and fingers are swollen and tender...",
+            "I can't move as well as I used to because of joint pain and stiffness..."
+          ],
+          "responses": [
+            "Maintaining a healthy weight and staying active are important in managing osteoarthritis symptoms.",
+            "Physical therapy and joint-strengthening exercises can be beneficial. Discuss with your healthcare provider.",
+            "If over-the-counter pain relievers are not effective, your doctor may prescribe stronger medication."
+          ]
+        },
+
+        {
+          "tag": "Allergic Rhinitis",
+          "patterns": [
+            "I have a runny or stuffy nose all the time...",
+            "My eyes, they itch and are red and watery...",
+            "I can't stop sneezing and sometimes I have a sore throat or cough...",
+            "I feel pressure in my sinuses and have headaches..."
+          ],
+          "responses": [
+            "These symptoms can be indicative of hay fever. Over-the-counter antihistamines and decongestants may help.",
+            "Reducing exposure to allergens, such as pollen, dust mites, and pet dander, is essential for symptom relief.",
+            "Consider visiting an allergist for allergy testing and discussing long-term treatment options, such as immunotherapy."
+          ]
+        },
+
+        
+
+        {
+          "tag": "Celiac Disease",
+          "patterns": [
+            "Eating bread or pasta causes me discomfort and bloating...",
+            "I've had diarrhea and abdominal pain that doesn't seem to go away...",
+            "I've been experiencing unexpected weight loss and feel fatigued all the time..."
+          ],
+          "responses": [
+            "These symptoms may suggest celiac disease, which is managed by strictly adhering to a gluten-free diet.",
+            "Consult with a healthcare provider for testing and confirmation of celiac disease before starting a gluten-free diet.",
+            "A registered dietitian can help develop a balanced gluten-free eating plan to ensure you're getting all necessary nutrients."
+          ]
+        },
+        {
+          "tag": "Celiac Disease",
+          "patterns": [
+            "Eating bread or pasta causes me discomfort and bloating...",
+            "I've had diarrhea and abdominal pain that doesn't seem to go away...",
+            "I've been experiencing unexpected weight loss and feel fatigued all the time..."
+          ],
+          "responses": [
+            "These symptoms may suggest celiac disease, which is managed by strictly adhering to a gluten-free diet.",
+            "Consult with a healthcare provider for testing and confirmation of celiac disease before starting a gluten-free diet.",
+            "A registered dietitian can help develop a balanced gluten-free eating plan to ensure you're getting all necessary nutrients."
+          ]
+        },
+        {
+          "tag": "Anemia",
+          "patterns": [
+            "I've been feeling weak and have trouble breathing after simple activities...",
+            "I look pale and feel dizzy often...",
+            "My heartbeat feels irregular and I sometimes feel chest pain..."
+          ],
+          "responses": [
+            "These symptoms could indicate anemia. Consuming iron-rich foods or taking iron supplements might help, but it's important to determine the cause of anemia.",
+            "Ensure you get a proper diagnosis, as treatment varies depending on the type of anemia.",
+            "Regular check-ups and blood tests can help monitor and manage anemia effectively."
+          ]
+        },
+        {
+          "tag": "ADHD",
+          "patterns": [
+            "I have a hard time focusing on tasks and get easily distracted...",
+            "I'm frequently losing things and forget appointments or obligations...",
+            "I tend to interrupt others and have trouble waiting my turn during conversations..."
+          ],
+          "responses": [
+            "ADHD can affect both children and adults and may require strategies to help with organization and time management.",
+            "Behavioral therapy can be helpful, and there are medications that can improve focus and attention. Discuss these options with a healthcare provider.",
+            "Creating a structured environment and a routine can provide significant benefits to someone with ADHD."
+          ]
+        },
+        {
+          "tag": "Seasonal Affective Disorder",
+          "patterns": [
+            "I feel depressed mainly during the winter months...",
+            "I'm sleeping too much and still feel drowsy during the day...",
+            "I'm craving carbs and gaining weight..."
+          ],
+          "responses": [
+            "These could be symptoms of Seasonal Affective Disorder. Getting plenty of sunlight can help, as can light therapy with a SAD lamp.",
+            "Regular exercise and a well-balanced diet might also alleviate symptoms.",
+            "If symptoms are severe, talking to a mental health professional could be beneficial."
+          ]
+        },
+        {
+          "tag": "Conjunctivitis",
+          "patterns": [
+            "My eye is red, and it feels like there's something in it...",
+            "I've got a discharge from one eye and it's sticky...",
+            "My eyes are itchy and burning, and I've been waking up with crusty eyelashes..."
+          ],
+          "responses": [
+            "It sounds like you may have conjunctivitis. Keeping the eye area clean and avoiding touching or rubbing your eyes is important.",
+            "Avoid sharing towels or pillowcases, and wash your hands frequently to prevent the spread of infection.",
+            "Most cases of conjunctivitis are self-limiting, but if symptoms worsen or persist, seek advice from an eye care specialist."
+          ]
+        },
+        {
+          "tag": "Chronic Kidney Disease",
+          "patterns": [
+            "I feel more tired and have less energy these days...",
+            "I've noticed swelling in my feet and ankles...",
+            "I'm not hungry and have been losing weight without trying...",
+            "I have trouble thinking clearly and I'm often feeling sleepy..."
+          ],
+          "responses": [
+            "These symptoms could be signs of kidney function decline. It’s important to get your kidney function checked regularly.",
+            "Managing blood pressure and sugar levels is crucial in CKD. Following a kidney-friendly diet can also help slow down disease progression.",
+            "Seek guidance from a nephrologist who can provide specialized care and discuss potential treatment options."
+          ]
+        },
+        {
+          "tag": "Sinusitis",
+          "patterns": [
+            "I've been having persistent nasal congestion and pain in my face...",
+            "I feel pressure around my eyes, cheeks, and forehead...",
+            "My mucus is thick and yellow or green in color..."
+          ],
+          "responses": [
+            "These symptoms could suggest sinusitis, which is an inflammation of the sinuses.",
+            "Steam inhalation and staying hydrated can help alleviate the congestion.",
+            "If symptoms persist for more than a week, or you experience a high fever, consult a healthcare provider as you may need antibiotics."
+          ]
+        },
+        {
+          "tag": "Restless Leg Syndrome",
+          "patterns": [
+            "I have uncomfortable sensations in my legs and an irresistible urge to move them...",
+            "My leg discomfort gets worse in the evening or when I'm resting...",
+            "The creepy-crawly sensation in my legs temporarily improves with movement..."
+          ],
+          "responses": [
+            "These symptoms are characteristic of Restless Leg Syndrome.",
+            "Maintaining a regular sleep schedule and engaging in moderate exercise can help.",
+            "Certain medications and supplements may alleviate symptoms, so it's important to discuss these options with your healthcare provider."
+          ]
+        },
+        {
+          "tag": "Gout",
+          "patterns": [
+            "I have sudden and severe pain in my joints, especially the big toe...",
+            "The affected joint is swollen, warm, and red...",
+            "I can't bear anything to touch my joint because it's so tender..."
+          ],
+          "responses": [
+            "Gout is an inflammatory condition characterized by uric acid crystal buildup in joints.",
+            "During a flare-up, rest the affected joint and apply ice to reduce inflammation.",
+            "Maintain a diet low in purines and discuss medications with your doctor to manage uric acid levels."
+          ]
+        },
+        {
+          "tag": "Eczema",
+          "patterns": [
+            "My skin is itchy and has developed red, inflamed patches...",
+            "I've noticed dry, scaly skin that sometimes weeps clear fluid...",
+            "There are areas of my skin that have become rough and thickened..."
+          ],
+          "responses": [
+            "Eczema symptoms can often be managed with moisturizers and avoiding irritants.",
+            "Topical corticosteroids may relieve inflammation and itching. Consult with a dermatologist before use.",
+            "A healthcare provider can also recommend other treatments such as phototherapy or immunosuppressants for severe cases."
+          ]
+        },
+        {
+          "tag": "Thyroid Disorders",
+          "patterns": [
+            "I've noticed changes in my weight without any changes to my diet or exercise routine...",
+            "I'm feeling unusually tired and my hair is thinning...",
+            "I'm either feeling too hot or too cold when others seem comfortable..."
+          ],
+          "responses": [
+            "Thyroid disorders can disrupt metabolic rate and body temperature regulation.",
+            "Consider getting your thyroid hormone levels checked through a blood test.",
+            "Treatment for thyroid disorders often involves medication to normalize hormone levels. Consult an endocrinologist for tailored advice."
+          ]
+        },
+        {
+          "tag": "Mononucleosis",
+          "patterns": [
+            "I've been feeling extremely tired lately, even after resting...",
+            "My throat is sore, and I have swollen lymph nodes in my neck...",
+            "I've had a high fever and a headache for several days now..."
+          ],
+          "responses": [
+            "These symptoms can be indicative of mononucleosis, which is often caused by the Epstein-Barr virus.",
+            "Rest is crucial for recovery from mono. Also, stay hydrated and avoid strenuous activities, especially contact sports to prevent spleen injury.",
+            "Symptoms usually resolve on their own, but if they worsen or don't improve, seek medical advice."
+          ]
+        },
+
+        {
+          "tag": "Hyperlipidemia",
+          "patterns": [
+          "My recent blood tests show high cholesterol levels...",
+          "I've been advised to watch my diet due to my lipid profile...",
+          "I'm concerned about my risk of heart disease with my cholesterol numbers..."
+          ],
+          "responses": [
+          "Elevated cholesterol, or hyperlipidemia, can increase the risk of cardiovascular disease. Dietary changes, like reducing saturated fat intake, can help manage cholesterol levels.",
+          "Regular exercise and weight management are also key in reducing lipid levels and promoting heart health.",
+          "Depending on the severity, statins or other lipid-lowering medications may be prescribed in conjunction with lifestyle modifications."
+          ]
+          },
+          
+       
+              {
+                "tag": "ChronicKidneyDisease",
+                "patterns": [
+                  "My doctor mentioned my glomerular filtration rate (GFR) is low...",
+                  "I have noticed swelling in my feet and ankles, and I'm urinating less often...",
+                  "My blood work indicates elevated creatinine and urea levels..."
+                ],
+                "responses": [
+                  "These signs may point to chronic kidney disease (CKD). Managing blood pressure and blood sugar is critical in slowing its progression.",
+                  "Dietary changes such as reducing sodium and protein intake can ease the kidneys' workload.",
+                  "Advanced CKD may require treatments like dialysis or kidney transplantation; therefore, early detection and management are vital."
+                ]
+              },
+          
+              {
+                "tag": "Osteoporosis",
+                "patterns": [
+                  "I've had a bone fracture from a minor fall...",
+                  "My bone density scan showed lower than normal results...",
+                  "I'm worried about bone weakness as I get older, especially being postmenopausal..."
+                ],
+                "responses": [
+                  "Osteoporosis involves decreased bone density and increased fracture risk. Calcium and vitamin D intake is crucial for bone health.",
+                  "Weight-bearing exercises can strengthen bones, and medications may be necessary to prevent further bone loss.",
+                  "Regular bone density screenings are important for monitoring bone health, especially for those at higher risk."
+                ]
+              },
+          
+              {
+                "tag": "Hypothyroidism",
+                "patterns": [
+                  "I'm feeling unusually fatigued and have gained weight without a change in diet...",
+                  "My TSH levels came back high on my last blood test...",
+                  "I feel cold all the time and my skin is dry, which is not usual for me..."
+                ],
+                "responses": [
+                  "These symptoms may indicate hypothyroidism, where the thyroid gland doesn't produce enough hormones.",
+                  "Thyroid hormone replacement therapy is the standard treatment to regulate TSH levels.",
+                  "Lifestyle adjustments and medication adherence are key, and regular TSH monitoring will help ensure the treatment's effectiveness."
+                ]
+              },
+          
+              {
+                "tag": "Conjunctivitis",
+                "patterns": [
+                  "I have redness and irritation in my eyes, and it's producing a lot of discharge...",
+                  "My eyes are itchy and they burn, and I woke up with them stuck shut...",
+                  "I've been around someone with 'pink eye', and now my eyes are uncomfortable..."
+                ],
+                "responses": [
+                  "These symptoms are common in conjunctivitis, an inflammation of the eye's outer membrane.",
+                  "It's important to maintain good hygiene to prevent the spread, as it can be highly contagious.",
+                  "Treatment depends on the cause, ranging from antibiotic eye drops for bacterial conjunctivitis to antihistamines for allergic forms."
+                ]
+              },
+         
+              {
+                "tag": "ChronicKidneyDisease",
+                "patterns": [
+                  "My doctor mentioned my glomerular filtration rate (GFR) is low...",
+                  "I have noticed swelling in my feet and ankles, and I'm urinating less often...",
+                  "My blood work indicates elevated creatinine and urea levels..."
+                ],
+                "responses": [
+                  "These signs may point to chronic kidney disease (CKD). Managing blood pressure and blood sugar is critical in slowing its progression.",
+                  "Dietary changes such as reducing sodium and protein intake can ease the kidneys' workload.",
+                  "Advanced CKD may require treatments like dialysis or kidney transplantation; therefore, early detection and management are vital."
+                ]
+              },
+          
+              {
+                "tag": "Osteoporosis",
+                "patterns": [
+                  "I've had a bone fracture from a minor fall...",
+                  "My bone density scan showed lower than normal results...",
+                  "I'm worried about bone weakness as I get older, especially being postmenopausal..."
+                ],
+                "responses": [
+                  "Osteoporosis involves decreased bone density and increased fracture risk. Calcium and vitamin D intake is crucial for bone health.",
+                  "Weight-bearing exercises can strengthen bones, and medications may be necessary to prevent further bone loss.",
+                  "Regular bone density screenings are important for monitoring bone health, especially for those at higher risk."
+                ]
+              },
+          
+              {
+                "tag": "Hypothyroidism",
+                "patterns": [
+                  "I'm feeling unusually fatigued and have gained weight without a change in diet...",
+                  "My TSH levels came back high on my last blood test...",
+                  "I feel cold all the time and my skin is dry, which is not usual for me..."
+                ],
+                "responses": [
+                  "These symptoms may indicate hypothyroidism, where the thyroid gland doesn't produce enough hormones.",
+                  "Thyroid hormone replacement therapy is the standard treatment to regulate TSH levels.",
+                  "Lifestyle adjustments and medication adherence are key, and regular TSH monitoring will help ensure the treatment's effectiveness."
+                ]
+              },
+          
+              {
+                "tag": "Conjunctivitis",
+                "patterns": [
+                  "I have redness and irritation in my eyes, and it's producing a lot of discharge...",
+                  "My eyes are itchy and they burn, and I woke up with them stuck shut...",
+                  "I've been around someone with 'pink eye', and now my eyes are uncomfortable..."
+                ],
+                "responses": [
+                  "These symptoms are common in conjunctivitis, an inflammation of the eye's outer membrane.",
+                  "It's important to maintain good hygiene to prevent the spread, as it can be highly contagious.",
+                  "Treatment depends on the cause, ranging from antibiotic eye drops for bacterial conjunctivitis to antihistamines for allergic forms."
+                ]
+              },
+
+              {
+                "tag": "IronDeficiencyAnemia",
+                "patterns": [
+                  "I've been feeling very tired and I'm told I look pale...",
+                  "My blood tests show low hemoglobin and hematocrit levels...",
+                  "I have been experiencing shortness of breath and dizziness on exertion..."
+                ],
+                "responses": [
+                  "These are common symptoms of iron deficiency anemia. Increasing iron in your diet or taking iron supplements can be effective.",
+                  "Intravenous iron therapy or blood transfusions may be needed in severe cases.",
+                  "It's important to investigate the cause of iron deficiency, such as gastrointestinal bleeding or malabsorption."
+                ]
+              },
+          
+              {
+                "tag": "Migraine",
+                "patterns": [
+                  "My headaches are often one-sided and pulsating...",
+                  "I experience nausea and sometimes vomit during intense headaches...",
+                  "Bright lights and loud noises exacerbate my headache pain..."
+                ],
+                "responses": [
+                  "These symptoms are characteristic of migraines. Identifying and avoiding triggers is an important prevention strategy.",
+                  "Triptans and ergotamines can be prescribed for acute migraine attacks, while beta-blockers or anticonvulsants may be used for prevention.",
+                  "Lifestyle modifications, including regular sleep patterns and stress management, can also be beneficial."
+                ]
+              },
+          
+              {
+                "tag": "Psoriasis",
+                "patterns": [
+                  "I have patches of red skin with silvery scales, especially on my elbows and knees...",
+                  "The skin on my scalp is itchy and flaky, and it sometimes bleeds when I scratch it...",
+                  "I noticed that my nails are pitted and discolored, along with the skin issues..."
+                ],
+                "responses": [
+                  "These symptoms are indicative of psoriasis, a chronic skin condition.",
+                  "Topical treatments like corticosteroids or vitamin D analogues are often used to manage symptoms.",
+                  "For moderate to severe cases, phototherapy or systemic medications may be necessary."
+                ]
+              },
+          
+              {
+                "tag": "ChronicObstructivePulmonaryDisease",
+                "patterns": [
+                  "I have a persistent cough with a lot of mucus...",
+                  "I feel short of breath, especially during physical activities...",
+                  "I have a history of smoking and now I'm experiencing respiratory issues..."
+                ],
+                "responses": [
+                  "These symptoms could be related to Chronic Obstructive Pulmonary Disease (COPD). Quitting smoking is the most important step in managing COPD.",
+                  "Bronchodilators and steroids are commonly used to reduce inflammation and open the airways.",
+                  "Pulmonary rehabilitation and oxygen therapy may also be beneficial for advanced cases."
+                ]
+              },
+          
+              {
+                "tag": "SeasonalAffectiveDisorder",
+                "patterns": [
+                  "I feel depressed during the winter months...",
+                  "My energy is low and I'm sleeping more than usual...",
+                  "I tend to eat more and crave carbohydrates in the colder seasons..."
+                ],
+                "responses": [
+                  "These symptoms may be indicative of Seasonal Affective Disorder (SAD), a type of depression related to changes in seasons.",
+                  "Light therapy, psychotherapy, and medications can be effective in treating SAD.",
+                  "Maintaining a regular schedule and staying active can also help alleviate symptoms."
+                ]
+              },
+          
+              {
+                "tag": "UrinaryTractInfection",
+                "patterns": [
+                  "I feel a burning sensation when I urinate...",
+                  "I need to urinate more often than usual, but only a little comes out...",
+                  "My urine looks cloudy and it smells stronger than usual..."
+                ],
+                "responses": [
+                  "These are classic symptoms of a urinary tract infection (UTI). It's important to increase fluid intake and urinate frequently to flush out bacteria.",
+                  "Antibiotics are the standard treatment for UTIs.",
+                  "Cranberry products and good personal hygiene can help prevent future infections."
+                ]
+              },
+          
+              {
+                "tag": "BenignProstaticHyperplasia",
+                "patterns": [
+                  "I have difficulty starting urination and my stream is weak...",
+                  "I frequently get up at night to urinate...",
+                  "I feel like I can't completely empty my bladder..."
+                ],
+                "responses": [
+                  "These urinary symptoms could be due to Benign Prostatic Hyperplasia (BPH), commonly known as prostate gland enlargement.",
+                  "Medications such as alpha-blockers can help relax the bladder and prostate muscles.",
+                  "In some cases, minimally invasive surgeries or other procedures may be required to relieve symptoms."
+                ]
+              } ,
+              {
+                "tag": "infant_nutrition",
+                "patterns": [
+                  "When should I start introducing solid foods to my infant?",
+                  "What are the signs that my infant is ready for solids?",
+                  "Are there any foods I should avoid giving my infant?",
+                  "How can I ensure my infant is getting enough iron?"
+                ],
+                "responses": [
+                  "Solid foods are typically introduced around 6 months of age, but it's important to also look for signs of readiness, such as the ability to sit with support and good head control.",
+                  "Signs that an infant is ready for solids include showing interest in food, opening the mouth when food comes their way, and the ability to move food to the throat and swallow.",
+                  "Avoid giving infants honey before age 1, as well as hard, small foods that could be a choking hazard, and foods with added sugars or salt.",
+                  "To ensure your infant gets enough iron, include iron-fortified cereals or pureed meats for infants starting solids, and continue breastfeeding or formula feeding."
+                ]
+              },
+              {
+                "tag": "infant_milestones",
+                "patterns": [
+                  "What are the developmental milestones I should look for in the first year?",
+                  "By what age should my infant be able to sit up?",
+                  "When do infants typically start to walk?",
+                  "How can I support my infant's developmental milestones?"
+                ],
+                "responses": [
+                  "Key milestones in the first year include smiling, rolling over, sitting without support, babbling, and possibly starting to say a few words like 'mama' or 'dada'.",
+                  "Infants can often sit up without support around 6 months of age, but some may achieve this a bit earlier or later.",
+                  "Walking often occurs around the age of 12-16 months, but it's normal for some babies to take their first steps slightly earlier or later.",
+                  "You can support your infant's development by providing plenty of supervised tummy time, interactive play, and opportunities to explore in a safe environment."
+                ]
+              },
+              {
+                "tag": "infant_safety",
+                "patterns": [
+                  "How can I baby-proof my home?",
+                  "What is the safest way for my baby to sleep?",
+                  "How should I install an infant car seat?",
+                  "Are any household products particularly dangerous for infants?"
+                ],
+                "responses": [
+                  "Baby-proofing your home includes securing furniture to the wall, covering electrical outlets, using safety gates, and keeping small objects out of reach.",
+                  "The safest way for babies to sleep is on their backs, in a crib with a firm mattress and no loose bedding or soft toys.",
+                  "Install an infant car seat in the back seat, facing the rear of the car. Make sure it's installed tightly and the harness fits snugly around your baby.",
+                  "Household products that are dangerous for infants include cleaning chemicals, medications, small batteries, and any small items that can be a choking hazard."
+                ]
+              },
+              {
+                "tag": "infant_skin_care",
+                "patterns": [
+                  "How should I bathe my newborn?",
+                  "What kind of lotion is safe for an infant's skin?",
+                  "My infant has a diaper rash, what can I do?",
+                  "Is it normal for my baby to have peeling skin?"
+                ],
+                "responses": [
+                  "Newborns don't need daily baths. Two to three times a week in a warm, shallow bath is enough. Use mild, fragrance-free soap and gently wash their skin.",
+                  "Use lotions that are fragrance-free and made for sensitive skin, ideally those formulated for infants.",
+                  "For diaper rash, change diapers often, clean the area gently with water, and apply a zinc oxide diaper cream. If the rash persists, consult your pediatrician.",
+                  "Peeling skin can be normal, especially in the first few weeks after birth, as the baby adjusts to the dry environment outside the womb."
+                ]
+              },
+
+              {
+                "tag": "routine_physical_examination",
+                "patterns": [
+                  "What are the components of a comprehensive physical examination?",
+                  "How should I conduct a cardiovascular system examination?",
+                  "Can you list the steps for a proper respiratory assessment?",
+                  "What are the key elements to assess in a neurological examination?"
+                ],
+                "responses": [
+                  "A comprehensive physical examination should include assessment of vital signs, general appearance, and systematic examination of all organ systems.",
+                  "A cardiovascular examination should include inspection, palpation, and auscultation of the heart, assessment of peripheral pulses, and examination for signs of vascular disease.",
+                  "A respiratory assessment should include inspection of the chest, palpation for tactile fremitus, percussion of lung fields, and auscultation for breath sounds and any adventitious sounds.",
+                  "Key elements of a neurological examination include assessment of mental status, cranial nerves, motor system, sensory system, reflexes, coordination, and gait."
+                ]
+              },
+              {
+                "tag": "health_screening_tests",
+                "patterns": [
+                  "What screening tests are recommended for adults over 50?",
+                  "How frequently should lipid profiles be checked?",
+                  "Are there guidelines for prostate cancer screening I should follow?",
+                  "What is the protocol for breast cancer screening in primary care?"
+                ],
+                "responses": [
+                  "For adults over 50, recommended screening tests include colonoscopy, mammography, lipid profile, blood pressure, diabetes screening, and bone density scan for osteoporosis.",
+                  "Lipid profiles should be checked every 4-6 years for adults with no cardiovascular risk factors, and more frequently in those with elevated risk.",
+                  "Prostate cancer screening guidelines vary, but generally, PSA testing is discussed and offered to men aged 55-69 after discussing potential risks and benefits.",
+                  "Breast cancer screening protocol typically includes mammography every 1-2 years for women aged 50-74, with the decision to start biennial screening before age 50 individualized based on patient context."
+                ]
+              },
+              {
+                "tag": "vaccination_schedule",
+                "patterns": [
+                  "Can you provide the adult vaccination schedule?",
+                  "Which vaccines are essential for patients with diabetes?",
+                  "Are there any new recommendations for the HPV vaccine for adults?",
+                  "What vaccinations should be considered for an adult traveling abroad?"
+                ],
+                "responses": [
+                  "The adult vaccination schedule includes influenza annually, Tdap every 10 years, shingles after age 50, and pneumococcal vaccines as per age and risk-based recommendations.",
+                  "Patients with diabetes should receive the hepatitis B vaccine, as well as standard adult vaccinations including annual influenza, Tdap, and pneumococcal vaccines.",
+                  "Recent recommendations for the HPV vaccine include vaccination for all adults through age 26, with shared clinical decision making for adults aged 27 through 45 years.",
+                  "For adults traveling abroad, consider destination-specific vaccines such as yellow fever, typhoid, and hepatitis A, along with routine vaccination updates."
+                ]
+              },
+              {
+                "tag": "chronic_disease_management",
+                "patterns": [
+                  "What are the goals of hypertension management in adults?",
+                  "How should I monitor a patient with type 2 diabetes?",
+                  "What are the latest guidelines for the management of chronic kidney disease?",
+                  "Can you outline the pharmacological treatment strategies for COPD?"
+                ],
+                "responses": [
+                  "Goals of hypertension management include maintaining blood pressure below 130/80 mmHg and reducing the risk of cardiovascular disease through lifestyle modification and pharmacotherapy.",
+                  "Monitoring a patient with type 2 diabetes involves regular assessment of blood glucose levels, HbA1c every 3-6 months, blood pressure, lipid profile, renal function, and diabetic foot exam.",
+                  "Latest guidelines for chronic kidney disease management focus on controlling blood pressure, managing blood glucose, appropriate use of ACE inhibitors or ARBs, and dietary modifications.",
+                  "Pharmacological treatment strategies for COPD may include bronchodilators, corticosteroids, phosphodiesterase-4 inhibitors, and antibiotics for management of exacerbations."
+                ]
+              },
+
+              {
+                "tag": "general_health_checkup",
+                "patterns": [
+                  "What should I expect during my health checkup?",
+                  "What do you check for in a routine heart exam?",
+                  "What does a regular lung check involve?",
+                  "What do you look for in a basic check of my nerves?"
+                ],
+                "responses": [
+                  "During a health checkup, you can expect a discussion about your medical history, a physical exam, and possibly some tests to check your general health.",
+                  "In a routine heart exam, we listen to your heart, check your pulse, and your blood pressure to make sure everything sounds normal.",
+                  "A regular lung check involves listening to your breathing and looking for any signs of breathing difficulty or congestion.",
+                  "In a basic neurological check, we assess your muscle strength, reflexes, balance, and how well your senses are working."
+                ]
+              },
+              {
+                "tag": "routine_screening_guidance",
+                "patterns": [
+                  "What health screenings do I need now that I’m older?",
+                  "How often should I get my cholesterol checked?",
+                  "Should I get screened for prostate issues?",
+                  "When do women usually start getting mammograms?"
+                ],
+                "responses": [
+                  "As we get older, we recommend screenings for things like colon health, possibly diabetes, and certain cancers. It will depend on your personal and family health history.",
+                  "Cholesterol should generally be checked every 4-6 years if you're at average risk for heart disease, but more often if you have additional risk factors.",
+                  "Prostate screening is something we may discuss based on your age and any symptoms you’re experiencing. It usually starts at age 50.",
+                  "Women typically start getting mammograms at age 40-50, and they might be done every 1-2 years."
+                ]
+              },
+              {
+                "tag": "immunization_info",
+                "patterns": [
+                  "What shots do I need as an adult?",
+                  "Is the flu shot really necessary every year?",
+                  "I have diabetes, do I need any special vaccines?",
+                  "Which vaccines should I consider if I’m traveling out of the country?"
+                ],
+                "responses": [
+                  "Adults still need shots to protect against diseases. These include the flu vaccine, a tetanus booster, and others depending on your age and health.",
+                  "The flu shot is recommended annually for nearly everyone, as the flu virus changes from year to year.",
+                  "If you have diabetes, it’s important to stay up to date with vaccinations because you may be at higher risk for certain infections.",
+                  "Travel vaccines depend on your destination. It's best to discuss your travel plans well in advance of your trip so we can make sure you're covered."
+                ]
+              },
+              {
+                "tag": "chronic_condition_overview",
+                "patterns": [
+                  "How do we take care of high blood pressure?",
+                  "What should I be doing to keep my sugar levels under control?",
+                  "Are there new ways to manage kidney health?",
+                  "What should I know about keeping my lungs healthy with COPD?"
+                ],
+                "responses": [
+                  "Managing high blood pressure usually involves lifestyle changes and sometimes medications to help lower your risk of heart disease.",
+                  "Keeping sugar levels under control often requires a combination of diet, exercise, monitoring your blood sugar, and possibly medication.",
+                  "For kidney health, it's important to control blood pressure and blood sugar, eat a balanced diet, and avoid substances that can harm the kidneys.",
+                  "For COPD, quitting smoking is crucial. We also focus on exercise, breathing techniques, and medications to help you breathe easier."
+                ]
+              },
+
+              {
+                "tag": "annual_exam",
+                "patterns": [
+                  "What happens during an annual exam?",
+                  "Why do I need to have my blood pressure taken every year?",
+                  "What's the point of checking my weight and height each visit?",
+                  "Why do you ask so many questions about my lifestyle?"
+                ],
+                "responses": [
+                  "An annual exam typically includes a review of your health history, a physical exam, and sometimes tests to check on your overall health status.",
+                  "Checking your blood pressure every year helps catch any early signs of heart issues so we can address them quickly.",
+                  "Measuring your weight and height helps us track any significant changes that could affect your health and tailor advice about diet and exercise.",
+                  "Questions about your lifestyle give us a full picture of your health risks and areas where we can work together to improve your health."
+                ]
+              },
+              {
+                "tag": "diet_and_nutrition",
+                "patterns": [
+                  "How do I know if I’m eating a balanced diet?",
+                  "Can you give me tips for eating well on a budget?",
+                  "Should I be taking vitamins or supplements?",
+                  "What kind of diet is best to lower my cholesterol?"
+                ],
+                "responses": [
+                  "A balanced diet includes a variety of foods from all food groups, ensuring you get all the nutrients your body needs.",
+                  "Eating well on a budget can be achieved by planning meals, buying whole foods in bulk, and choosing in-season produce.",
+                  "Whether you need vitamins or supplements depends on your specific health needs, which we can discuss in more detail.",
+                  "A diet to lower cholesterol is rich in fruits, vegetables, whole grains, and lean proteins, and low in saturated and trans fats."
+                ]
+              },
+              {
+                "tag": "exercise_guidance",
+                "patterns": [
+                  "How much exercise should I be getting?",
+                  "What kind of exercise is best for weight loss?",
+                  "Can you recommend any exercises for stress relief?",
+                  "Is it safe to exercise with high blood pressure?"
+                ],
+                "responses": [
+                  "Most adults should aim for at least 150 minutes of moderate aerobic activity or 75 minutes of vigorous activity a week, plus muscle-strengthening activities on 2 or more days a week.",
+                  "For weight loss, a combination of cardio and strength training exercises is generally recommended, along with a healthy diet.",
+                  "Exercises like yoga, tai chi, and even regular walking can be great for stress relief.",
+                  "Exercising with high blood pressure is usually safe and beneficial, but it's best to discuss your specific exercise plan to ensure it's appropriate for you."
+                ]
+              },
+              {
+                "tag": "smoking_cessation",
+                "patterns": [
+                  "Why is it so important to quit smoking?",
+                  "What resources can help me stop smoking?",
+                  "Is vaping a good alternative to help quit smoking?",
+                  "What are the health benefits of quitting smoking?"
+                ],
+                "responses": [
+                  "Quitting smoking is one of the best things you can do for your health, reducing your risk of many diseases including heart disease and cancer.",
+                  "There are many resources to help quit smoking, including medications, nicotine replacement therapy, and support groups.",
+                  "Vaping is not recommended as a method to quit smoking, as it still presents health risks and the long-term effects are not well understood.",
+                  "The health benefits of quitting smoking include improved lung function, reduced risk of heart disease, and a lower chance of developing a range of cancers."
+                ]
+              },
+
+              {
+                "tag": "medication_explanation",
+                "patterns": [
+                  "How does this medicine work?",
+                  "What are the side effects of this medication?",
+                  "Why do I need to take this medication with food?",
+                  "What should I do if I miss a dose of my medicine?"
+                ],
+                "responses": [
+                  "This medicine works by targeting the specific part of your body that's causing the problem, like reducing inflammation or fighting off an infection.",
+                  "Common side effects can include things like nausea, headaches, or dizziness, but you might not experience any. It's important to read the leaflet that comes with the medication for a full list.",
+                  "Taking medication with food can help your body absorb it better, or it might be to prevent stomach upset.",
+                  "If you miss a dose, take it as soon as you remember unless it's almost time for your next dose. In that case, skip the missed dose and continue as normal. Never double up doses."
+                ]
+              },
+              {
+                "tag": "over_the_counter_options",
+                "patterns": [
+                  "What can I take for a headache that I can buy without a prescription?",
+                  "Are there any non-prescription medicines for allergies?",
+                  "What's a good over-the-counter remedy for a cold?",
+                  "Can you recommend something for heartburn I can get over the counter?"
+                ],
+                "responses": [
+                  "For a headache, over-the-counter options include medications like acetaminophen or ibuprofen. Just be sure to follow the dosage instructions on the package.",
+                  "For allergies, antihistamines that don't require a prescription can be effective. Options include brands like Claritin or Zyrtec.",
+                  "Over-the-counter cold remedies often include decongestants and cough suppressants. Look for a product that targets your specific symptoms.",
+                  "For heartburn, you can try antacids like Tums or Rolaids, or acid reducers like ranitidine or omeprazole, which are available without a prescription."
+                ]
+              },
+              {
+                "tag": "medication_management",
+                "patterns": [
+                  "How should I keep track of when to take my medications?",
+                  "Can I drink alcohol while taking this medication?",
+                  "What's the best way to store my medicines?",
+                  "Do I need to finish all the medicine even if I feel better?"
+                ],
+                "responses": [
+                  "Keeping track of medications can be done using a pillbox or a medication schedule chart. There are also apps available that can remind you.",
+                  "Alcohol can interact with many medications, so it's best to avoid it or check with a healthcare professional first.",
+                  "Most medicines should be stored in a cool, dry place. Keep them in their original containers and out of reach of children.",
+                  "It's important to finish all your medicine as prescribed, especially antibiotics, to ensure all the bacteria are killed and to prevent resistance."
+                ]
+              },
+              {
+                "tag": "alternative_medicine_advice",
+                "patterns": [
+                  "Are there natural remedies I can use instead of medication?",
+                  "What do you think about herbal supplements?",
+                  "Can lifestyle changes reduce my need for medication?",
+                  "Is it safe to try alternative medicines for my condition?"
+                ],
+                "responses": [
+                  "Some conditions can be managed with natural remedies, but it depends on the specifics. It's always important to discuss with your healthcare provider before starting any new treatment.",
+                  "Herbal supplements can be beneficial for some people, but they're not without risks and can interact with other medications. Let's talk about your specific situation.",
+                  "Lifestyle changes like a better diet and more exercise can sometimes reduce the need for medication, particularly for conditions like high blood pressure or diabetes.",
+                  "Alternative medicines can be an option for some conditions, but safety and effectiveness vary. It's crucial to consult with a healthcare professional before trying any new treatment."
+                ]
+              },
+              {
+                "tag": "understanding_prescriptions",
+                "patterns": [
+                  "What do these numbers mean on my prescription label?",
+                  "How do I know if I can take my medication on an empty stomach?",
+                  "Why are there different names for the same medication?",
+                  "Can I take my medication at any time of the day?"
+                ],
+                "responses": [
+                  "The numbers on your prescription label usually indicate the dose of the medication and how many times a day you should take it.",
+                  "Your prescription label or the information leaflet inside will tell you whether to take your medication with food or on an empty stomach.",
+                  "Medications often have a generic name, which is the active ingredient, and a brand name, which is given by the manufacturer.",
+                  "Some medications work better if taken at specific times of the day, so it's best to follow the instructions provided by your healthcare provider or pharmacist."
+                ]
+              },
+              {
+                "tag": "medication_side_effects",
+                "patterns": [
+                  "Will this medication make me feel tired?",
+                  "What should I do if I experience side effects from my medication?",
+                  "Are the side effects from my new prescription permanent?",
+                  "How can I minimize the side effects of my medication?"
+                ],
+                "responses": [
+                  "Some medications can cause tiredness. It's important to see how it affects you and talk to your healthcare provider if it becomes troublesome.",
+                  "If you experience side effects, contact your healthcare provider. They can advise you on whether to stop the medication or adjust the dose.",
+                  "Most side effects are not permanent and will go away after your body adjusts to the medication or once you stop taking it.",
+                  "To minimize side effects, follow the dosing instructions carefully and discuss with your healthcare provider any concerns or existing conditions that might be affected by the medication."
+                ]
+              },
+              {
+                "tag": "medication_interactions",
+                "patterns": [
+                  "Can I take my prescriptions with over-the-counter drugs?",
+                  "Should I avoid certain foods while on my medication?",
+                  "Will my birth control pills interact with my new prescription?",
+                  "How do I know if my medications are safe to take together?"
+                ],
+                "responses": [
+                  "You should always check with your healthcare provider or pharmacist before combining prescription and over-the-counter drugs.",
+                  "Certain medications can interact with foods, so it’s important to read the information that comes with your medication or ask your pharmacist.",
+                  "Some medications can affect how birth control pills work, so let's review all your medications to ensure they're safe to take together.",
+                  "Your pharmacist can check if your medications are safe to take together. Always inform them of all the medicines you’re taking, including over-the-counter drugs and supplements."
+                ]
+              },
+              {
+                "tag": "medication_efficacy",
+                "patterns": [
+                  "How long will it take for my medication to work?",
+                  "Why do I need to take my medication at the same time every day?",
+                  "What if I don't feel any different after taking my medication?",
+                  "How will I know if my medication is effective?"
+                ],
+                "responses": [
+                  "The time it takes for medication to work varies. Some provide relief within hours, while others need to be taken longer to see benefits.",
+                  "Taking your medication at the same time every day helps maintain a constant level in your body for it to be effective.",
+                  "If you don't feel different, it doesn't necessarily mean the medication isn't working. Some effects are gradual and not immediately noticeable.",
+                  "We'll know your medication is effective through follow-up visits, tests, or if you experience an improvement in your symptoms."
+                ]
+              },
+
+              {
+                "tag": "condition_overview",
+                "patterns": [
+                  "Can you tell me more about asthma?",
+                  "I was diagnosed with type 2 diabetes, what does that mean?",
+                  "What is hypertension?",
+                  "Explain high cholesterol to me."
+                ],
+                "responses": [
+                  "Asthma is a chronic condition that narrows and inflames your airways, causing wheezing, coughing, and shortness of breath. Managing it involves avoiding triggers and using prescribed inhalers.",
+                  "Type 2 diabetes means your body doesn't use insulin properly and can't maintain normal blood sugar levels. Managing it involves dietary changes, exercise, monitoring blood sugar, and sometimes medication.",
+                  "Hypertension, or high blood pressure, is when the force of blood against your artery walls is too high. It can lead to heart disease if not managed by lifestyle changes and medication.",
+                  "High cholesterol means you have too much of a fatty substance in your blood, which can narrow arteries and lead to heart disease. It's managed by eating a healthy diet and sometimes with medication."
+                ]
+              },
+              {
+                "tag": "medication_education",
+                "patterns": [
+                  "Why do I have to take antibiotics?",
+                  "What are statins for?",
+                  "How do antihypertensive drugs work?",
+                  "Why is it important to take all of my antibiotic prescription?"
+                ],
+                "responses": [
+                  "Antibiotics are prescribed to treat bacterial infections. They work by killing bacteria or preventing them from growing and spreading.",
+                  "Statins are used to lower cholesterol levels in the blood. They work by blocking a substance your body needs to make cholesterol.",
+                  "Antihypertensive drugs lower blood pressure. There are different types, and they work in various ways to help relax and widen blood vessels or reduce heart workload.",
+                  "It's important to take all of your antibiotics to ensure all the bacteria are eliminated, even if you feel better, to prevent the infection from returning and to avoid antibiotic resistance."
+                ]
+              },
+              {
+                "tag": "healthy_lifestyle_tips",
+                "patterns": [
+                  "How can I live a healthier lifestyle?",
+                  "What are some heart-healthy exercises?",
+                  "Can you give me tips for a diabetic-friendly diet?",
+                  "What lifestyle changes can help with high blood pressure?"
+                ],
+                "responses": [
+                  "Living a healthier lifestyle includes eating a balanced diet, exercising regularly, getting enough sleep, managing stress, and avoiding smoking and excessive drinking.",
+                  "Heart-healthy exercises include any form of aerobic activity, such as brisk walking, cycling, swimming, or jogging, that gets your heart rate up.",
+                  "A diabetic-friendly diet involves eating high-fiber foods, such as fruits, vegetables, and whole grains, and limiting sugars and refined carbs.",
+                  "Lifestyle changes for high blood pressure include regular physical activity, a low-salt diet, maintaining a healthy weight, moderating alcohol intake, and avoiding tobacco."
+                ]
+              },
+              {
+                "tag": "disease_prevention",
+                "patterns": [
+                  "How can I prevent heart disease?",
+                  "What can I do to reduce my risk of diabetes?",
+                  "Are there ways to prevent arthritis?",
+                  "Can lifestyle changes reduce the risk of cancer?"
+                ],
+                "responses": [
+                  "Preventing heart disease involves maintaining a healthy diet, exercising regularly, managing stress, keeping a healthy weight, and not smoking.",
+                  "Reducing the risk of diabetes includes regular exercise, a healthy diet, weight loss if you're overweight, and regular blood sugar testing if you're at risk.",
+                  "While you can't always prevent arthritis, you can reduce risk factors by maintaining a healthy weight, staying active, and avoiding repetitive joint use or injury.",
+                  "Lifestyle changes can reduce the risk of some cancers; this includes avoiding tobacco, limiting alcohol, a healthy diet, sun protection, regular exercise, and getting cancer screenings."
+                ]
+              },
+
+              {
+                "tag": "understanding_lab_results",
+                "patterns": [
+                  "What do my blood test results mean?",
+                  "Can you explain what 'liver function tests' are?",
+                  "My doctor mentioned 'electrolytes' in my urine test; what does that mean?",
+                  "What is a CBC and why is it important?"
+                ],
+                "responses": [
+                  "Blood test results can give us a lot of information about your overall health, such as blood cell counts, sugar levels, and kidney function. Each marker helps us understand different aspects of your body's functioning.",
+                  "Liver function tests measure various proteins and enzymes in your blood that indicate how well your liver is working.",
+                  "Electrolytes are minerals in your blood and urine like sodium and potassium that are essential for normal body function, including muscle contraction and nerve function.",
+                  "A CBC, or complete blood count, measures the cells in your blood. It's important because it can indicate conditions like anemia, infections, and many other disorders."
+                ]
+              },
+              {
+                "tag": "chronic_disease_education",
+                "patterns": [
+                  "How do chronic diseases affect overall health?",
+                  "What are common complications of chronic diseases?",
+                  "How can I manage a chronic disease at home?",
+                  "Why is regular monitoring important for chronic conditions?"
+                ],
+                "responses": [
+                  "Chronic diseases, like heart disease or diabetes, can affect your body's ability to perform normal functions and can impact your quality of life over time.",
+                  "Common complications include damage to vital organs, reduced mobility, and other conditions that can arise from long-term disease progression.",
+                  "Managing a chronic disease at home includes following treatment plans, monitoring your condition, lifestyle modifications, and regular check-ins with your healthcare provider.",
+                  "Regular monitoring is crucial to manage and adjust treatment plans, prevent complications, and maintain as healthy a life as possible."
+                ]
+              },
+              {
+                "tag": "medication_safety",
+                "patterns": [
+                  "How can I be sure my medications are safe?",
+                  "What are the risks of taking multiple medications?",
+                  "How do I report a problem with my medication?",
+                  "Why do I need to tell my doctor about all the supplements I take?"
+                ],
+                "responses": [
+                  "Medications go through rigorous testing for safety, but it's important to use them as directed and report any adverse effects to your doctor.",
+                  "Taking multiple medications can increase the risk of interactions and side effects. It’s important to have a medication review regularly.",
+                  "If you have a problem with a medication, you should report it to your doctor or pharmacist immediately. They can report it to the proper authorities if needed.",
+                  "Telling your doctor about supplements is important because they can interact with medications and affect how your treatments work."
+                ]
+              },
+              {
+                "tag": "preventative_health",
+                "patterns": [
+                  "What can I do to prevent getting sick?",
+                  "How effective are flu shots?",
+                  "What screening tests should I get as I get older?",
+                  "Why is hand washing important for health?"
+                ],
+                "responses": [
+                  "To prevent getting sick, you should practice good hygiene, eat healthily, get regular exercise, and keep up with vaccinations.",
+                  "Flu shots significantly reduce the risk of getting the flu and can prevent complications if you do get sick.",
+                  "As you get older, you may need screenings for conditions like cancer, osteoporosis, and heart disease, depending on your risk factors.",
+                  "Hand washing is one of the most effective ways to prevent the spread of infections and keep yourself and others healthy."
+                ]
+              },
+
+              {
+                "tag": "nutrition_facts",
+                "patterns": [
+                  "What does 'daily value' mean on food labels?",
+                  "How do I know if something has too much sugar?",
+                  "Can you explain what 'saturated fat' is?",
+                  "Why is fiber important in my diet?"
+                ],
+                "responses": [
+                  "The 'daily value' on food labels shows how much of a nutrient is in one serving of food in relation to the recommended daily total.",
+                  "Something has too much sugar if it has close to or more than the daily value percentage for added sugars on the nutrition label.",
+                  "Saturated fat is a type of fat found in foods that can raise your cholesterol levels and increase the risk of heart disease if consumed in excess.",
+                  "Fiber is important because it helps regulate the body's use of sugars, keeping hunger and blood sugar in check, and it helps with digestion."
+                ]
+              },
+              {
+                "tag": "exercise_benefits",
+                "patterns": [
+                  "What are the benefits of regular exercise?",
+                  "How does physical activity help with stress?",
+                  "Can exercising help improve sleep?",
+                  "Does working out affect mental health?"
+                ],
+                "responses": [
+                  "Regular exercise benefits your body in many ways, including improving heart health, increasing strength and endurance, and reducing the risk of chronic diseases.",
+                  "Physical activity helps with stress by releasing endorphins, which are chemicals in the brain that act as natural painkillers and mood elevators.",
+                  "Exercising can help improve sleep quality by helping you fall asleep faster and deepening your sleep.",
+                  "Working out has a positive impact on mental health by reducing symptoms of depression and anxiety and improving cognitive function."
+                ]
+              },
+              {
+                "tag": "managing_stress",
+                "patterns": [
+                  "What strategies can I use to manage stress?",
+                  "Are relaxation techniques like deep breathing effective?",
+                  "How can mindfulness meditation help with stress?",
+                  "Can physical activities reduce feelings of stress?"
+                ],
+                "responses": [
+                  "Strategies to manage stress include regular exercise, maintaining social connections, adequate sleep, and time management.",
+                  "Relaxation techniques like deep breathing are effective in managing stress as they help slow down your heart rate and lower blood pressure.",
+                  "Mindfulness meditation helps with stress by allowing you to focus on the present moment, which can reduce racing thoughts and tension.",
+                  "Physical activities can significantly reduce feelings of stress by improving your mood and distracting you from daily pressures."
+                ]
+              },
+              {
+                "tag": "smoking_risks",
+                "patterns": [
+                  "What are the risks of smoking cigarettes?",
+                  "How does smoking affect my body?",
+                  "Can secondhand smoke harm others?",
+                  "Why is quitting smoking so important for health?"
+                ],
+                "responses": [
+                  "The risks of smoking cigarettes include an increased chance of developing heart disease, stroke, lung cancer, and a range of other health issues.",
+                  "Smoking affects your body by damaging your lungs, heart, and blood vessels, and it can affect your immune system's ability to fight off infections.",
+                  "Secondhand smoke can indeed harm others, especially children and non-smoking adults, as it contains many of the same harmful chemicals inhaled by smokers.",
+                  "Quitting smoking is important because it greatly reduces your risk of disease, adds years to your life, and improves health overall."
+                ]
+              },
+              {
+                "tag": "vaccination_importance",
+                "patterns": [
+                  "Why are vaccinations necessary?",
+                  "How do vaccines protect me from diseases?",
+                  "What are the risks if I don't get vaccinated?",
+                  "Are there side effects to vaccinations?"
+                ],
+                "responses": [
+                  "Vaccinations are necessary because they protect against diseases that can cause serious illness or death.",
+                  "Vaccines protect by causing your body to create defenses (antibodies) against the disease without getting the disease itself.",
+                  "If you don't get vaccinated, you are at higher risk of catching and spreading diseases, some of which can be severe or life-threatening.",
+                  "Like any medication, vaccines can have side effects, but most are minor and temporary, such as a sore arm or mild fever."
+                ]
+              },
+
+              {
+                "tag": "healthy_sleep_habits",
+                "patterns": [
+                  "What can I do to improve my sleep?",
+                  "How does a lack of sleep affect my health?",
+                  "Are naps good for you?",
+                  "What is sleep hygiene?"
+                ],
+                "responses": [
+                  "Improving sleep can include setting a regular bedtime, reducing screen time before bed, ensuring a comfortable sleep environment, and avoiding caffeine in the evening.",
+                  "A lack of sleep can lead to poor concentration, increased risk of chronic health issues like obesity and heart disease, and affect your immune system.",
+                  "Short naps can be beneficial for some people, especially if limited to 20-30 minutes to avoid interfering with nighttime sleep.",
+                  "Sleep hygiene refers to the practices and habits that are conducive to sleeping well on a regular basis, like having a consistent sleep schedule and creating a restful environment."
+                ]
+              },
+              {
+                "tag": "alcohol_consumption",
+                "patterns": [
+                  "How much alcohol is safe to drink?",
+                  "What are the effects of alcohol on my body?",
+                  "Can you tell me about the risks of drinking too much?",
+                  "What does it mean to drink in moderation?"
+                ],
+                "responses": [
+                  "Safe levels of alcohol consumption vary, but moderate drinking is generally defined as up to one drink per day for women and up to two drinks per day for men.",
+                  "Alcohol can affect many parts of your body, including your liver, brain, heart, and pancreas, and can increase the risk of certain cancers.",
+                  "Drinking too much can lead to alcohol use disorder, liver disease, cardiovascular problems, and increase the risk of accidents and injuries.",
+                  "Drinking in moderation means limiting your alcohol intake to avoid the negative health and social consequences associated with excessive drinking."
+                ]
+              },
+              {
+                "tag": "sun_protection_education",
+                "patterns": [
+                  "Why is it important to protect my skin from the sun?",
+                  "How can I protect my skin from sun damage?",
+                  "What is SPF and how do I choose the right one?",
+                  "Can I get sunburned on a cloudy day?"
+                ],
+                "responses": [
+                  "Protecting your skin from the sun is crucial to prevent skin cancer and premature aging like wrinkles and sunspots.",
+                  "You can protect your skin by wearing sunscreen with at least SPF 30, covering up with clothing, seeking shade, and avoiding the sun during peak hours.",
+                  "SPF, or Sun Protection Factor, measures how well sunscreen will protect skin from UVB rays. Higher SPF numbers offer more protection, but no sunscreen can block 100% of UVB rays.",
+                  "Yes, you can still get sunburned on a cloudy day as UV rays can penetrate through the clouds."
+                ]
+              },
+              {
+                "tag": "mental_wellness_strategies",
+                "patterns": [
+                  "How can I maintain good mental health?",
+                  "What are some signs of poor mental health?",
+                  "How can I support a friend who is dealing with mental health issues?",
+                  "What professional help is available for mental health?"
+                ],
+                "responses": [
+                  "Maintaining good mental health involves managing stress, staying connected with others, staying active, getting enough sleep, and seeking help when needed.",
+                  "Signs of poor mental health include persistent sadness or anxiety, excessive fears or worries, extreme mood changes, withdrawing from friends and activities, and significant tiredness or low energy.",
+                  "Supporting someone with mental health issues involves listening without judgment, encouraging them to seek professional help, and being there consistently for them.",
+                  "Professional help for mental health can include psychologists, psychiatrists, counselors, or specialized support groups."
+                ]
+              },
+
+              {
+                "tag": "neonatal_nutrition",
+                "patterns": [
+                  "What are the guidelines for initiating enteral nutrition in preterm infants?",
+                  "Can you discuss the management of feeding intolerance in neonates?",
+                  "How should we monitor for signs of necrotizing enterocolitis in at-risk infants?",
+                  "What's the protocol for vitamin D supplementation in exclusively breastfed infants?"
+                ],
+                "responses": [
+                  "Enteral nutrition in preterm infants should be initiated cautiously, with gradual increments as tolerated, prioritizing maternal breast milk or donor milk when available.",
+                  "Management of feeding intolerance may include pausing enteral feeds, assessing for underlying sepsis, and considering abdominal radiography if necrotizing enterocolitis (NEC) is suspected.",
+                  "Monitoring for NEC should include vigilant observation for abdominal distension, gastric residuals, bloody stools, and changes in feeding tolerance, especially in preterm or critically ill infants.",
+                  "The American Academy of Pediatrics recommends 400 IU of vitamin D supplementation daily for all breastfed infants from the first few days of life."
+                ]
+              },
+              {
+                "tag": "neonatal_growth_monitoring",
+                "patterns": [
+                  "What is the recommended approach for monitoring growth in neonates?",
+                  "How often should head circumference be measured in infants?",
+                  "Can you explain the interpretation of growth charts for preterm infants?",
+                  "What are the indicators of failure to thrive in an infant?"
+                ],
+                "responses": [
+                  "Growth monitoring in neonates should include regular measurements of weight, length, and head circumference, plotted on age- and sex-specific growth charts.",
+                  "Head circumference should be measured at every well-child visit until the child is 2 years old to assess brain growth and development.",
+                  "Interpretation of growth charts for preterm infants requires the use of corrected age until two years and special growth charts like the Fenton or WHO growth standards for preterm infants.",
+                  "Indicators of failure to thrive may include weight consistently below the 3rd percentile, weight deceleration crossing two major percentile lines, and inadequate weight gain over time."
+                ]
+              },
+              {
+                "tag": "infant_immunology",
+                "patterns": [
+                  "What are the primary immunodeficiencies to consider in infants with recurrent infections?",
+                  "How do we approach vaccination in infants with a family history of immunodeficiency?",
+                  "Can you outline the evaluation process for an infant presenting with severe combined immunodeficiency (SCID)?",
+                  "What is the management strategy for infants with confirmed transient hypogammaglobulinemia of infancy?"
+                ],
+                "responses": [
+                  "Primary immunodeficiencies in infants may include conditions such as SCID, agammaglobulinemia, and DiGeorge syndrome, requiring referral to a pediatric immunologist for evaluation.",
+                  "For infants with a family history of immunodeficiency, a careful assessment of immune function should be performed prior to initiating live vaccines.",
+                  "Evaluation of SCID typically involves measuring T-cell receptor excision circles (TRECs) and lymphocyte proliferation in response to mitogens, with genetic testing to identify specific etiologies.",
+                  "Management of transient hypogammaglobulinemia of infancy generally includes prophylactic antibiotics for recurrent infections and monitoring of immunoglobulin levels until normalization."
+                ]
+              },
+              {
+                "tag": "pediatric_neurodevelopment",
+                "patterns": [
+                  "What are the red flags for autism spectrum disorder in infants?",
+                  "How do we differentiate between cerebral palsy and developmental coordination disorder in toddlers?",
+                  "Can you provide the indications for magnetic resonance imaging in infants with developmental delay?",
+                  "What is the role of EEG in the assessment of infants with hypotonia?"
+                ],
+                "responses": [
+                  "Red flags for autism in infants include lack of eye contact, absence of social smiles or joyful expressions by six months, and not sharing sounds or facial expressions by nine months.",
+                  "Differentiating cerebral palsy from developmental coordination disorder involves assessing for early motor milestones, muscle tone, and reflexes, with cerebral palsy often presenting with spasticity and delayed motor milestones.",
+                  "Indications for MRI in the setting of developmental delay include abnormal neurologic examination, seizures, and when specific syndromes are suspected that may have characteristic brain MRI findings.",
+                  "EEG is indicated in the assessment of hypotonia when there is a suspicion of neuromuscular disease, especially if there is a history of seizures or abnormal movements that may suggest a central cause."
+                ]
+              }
+          
+          
+          
+          
+          
+          
+          
+    
+
+      ]
+    }
+    
